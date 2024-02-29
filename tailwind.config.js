@@ -27,17 +27,16 @@ module.exports = {
         accent: '#F13024',
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        explosion: 'url("/portefeuille/bg-explosion.png")',
+        circles: 'url("/portefeuille/bg-circles.png")',
+        circleStar: 'url("/portefeuille/circle-star.svg")',
+        site: 'url("/portefeuille/site-bg.svg")',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
-        sora: [`var(--font-sora)`, 'sans-serif'],
       },
     },
   },
