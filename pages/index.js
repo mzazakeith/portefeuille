@@ -33,7 +33,7 @@ const Home = () => {
             mix-blend-color-dodge translate-z-0'>
             </div>
 
-            <div>Particles</div>
+            <ParticlesContainer/>
 
             <motion.div
                 variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden'
