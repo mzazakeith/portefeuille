@@ -3,6 +3,7 @@ import {Poppins} from '@next/font/google';
 import Nav from '../components/Nav'
 import TopLeftImg from "../components/TopLeftImg";
 import Header from "../components/Header";
+import {useRouter} from "next/router";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -11,8 +12,10 @@ const poppins = Poppins({
 });
 
 const Layout = ({children}) => {
+    const router = useRouter();
+    const pathname = router.pathname
   return(
-      <div className={`page bg-site text-white bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
+      <div className={`${pathname === "/" && 'page'} top-0 bg-site text-white bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
         <TopLeftImg/>
         <Nav/>
         <Header/>
