@@ -4,7 +4,7 @@ import Nav from '../components/Nav'
 import Header from "../components/Header";
 import {useRouter} from "next/router";
 import BottomRightImg from "./BottomRightImg";
-import BottomLeftImg from "../components/TopLeftImg";
+import BottomLeftImg from "./BottomLeftImg";
 
 const poppins = Poppins({
   subsets: ['latin'],
