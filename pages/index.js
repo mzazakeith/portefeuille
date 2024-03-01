@@ -8,7 +8,7 @@ import {fadeIn} from "../variants";
 
 const Home = () => {
   return (
-      <div className='bg-primary/6- h-full'>
+      <div className='bg-primary/6- h-full page'>
 
         <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
           <div className='flex flex-col justify-center text-center xl:pt-40 xl:text-left h-full container mx-auto'>
