@@ -140,11 +140,11 @@ const About = () => {
 
             <div className='col-span-4 flex flex-col items-start justify-start'>
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
-              <p>Hi, I'm Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel, aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
+              <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel, aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
 
               <p>I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. Donec ullamcorper nulla non metus auctor fringilla.</p>
 
-              <p>Whether I'm working on lorem ipsum, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus egestas, fringilla vel, aliquet magna.</p>
+              <p>Whether I am working on lorem ipsum, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus egestas, fringilla vel, aliquet magna.</p>
 
               <p>I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet magna. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Phasellus eu ex justo. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
