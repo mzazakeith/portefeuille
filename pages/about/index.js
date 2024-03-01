@@ -115,11 +115,6 @@ const AnimatedNumbers = ({value}) =>{
   return <span ref={ref}></span>
 }
 
-const arrowVariants = {
-  initial: { y: 0 }, // Define the initial state
-  animate: { y: [0, 20, 0], transition: { duration: 1.5, repeat: Infinity } },
-};
-
 const About = () => {
   return (
       <div className="h-full py-32 text-center xl:text-left">
@@ -175,14 +170,11 @@ const About = () => {
           </div>
 
           <div className='flex flex-row justify-center items-center w-full'>
-            <motion.div variants={arrowVariants}
-                        initial="initial"
-                        animate="animate"
-                        className="text-accent inline-block">
+            <div className="text-accent inline-block animate-bounce">
               <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" />
               </svg>
-            </motion.div>
+            </div>
           </div>
 
         </div>
