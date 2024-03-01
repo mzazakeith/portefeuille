@@ -15,7 +15,7 @@ const Layout = ({children}) => {
     const router = useRouter();
     const pathname = router.pathname
   return(
-      <div className={`${pathname === "/" && 'page'} top-0 bg-site text-white bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
+      <div className={`${pathname === "/" && 'page'} bg-white top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
         <TopLeftImg/>
         <Nav/>
         <Header/>

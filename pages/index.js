@@ -10,7 +10,7 @@ const Home = () => {
   return (
       <div className='bg-primary/6- h-full page'>
 
-        <div className='w-full h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10'>
+        <div className='w-full h-full'>
           <div className='flex flex-col justify-center text-center xl:pt-40 xl:text-left h-full container mx-auto'>
 
             <motion.h1
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
 
         <div className='w-[1200px] h-full absolute right-0 bottom-0'>
-            <div className='bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute
+            <div className='bg-none w-full h-full absolute
             mix-blend-color-dodge translate-z-0'>
             </div>
 
