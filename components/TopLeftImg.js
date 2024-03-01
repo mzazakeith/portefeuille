@@ -1,14 +1,14 @@
 import Image from "next/image";
 import {useRouter} from "next/router";
 
-const TopLeftImg = () => {
+const BottomLeftImg = () => {
     const router = useRouter();
-
+    const pathname = router.pathname
   return (
-      <div className='absolute left-0 top-0 mix-blend-color-dodge z-10 w-[200px] xl:w-[400px] opacity-50'>
-        <Image src={`${router.basePath}/top-left-img.png`} width={400} height={400} alt=''/>
+      <div className='absolute left-1 bottom-0 z-10 w-[1000px] xl:w-[150px] -rotate-25 opacity-80'>
+        <Image src={`${router.basePath}/terminal-icon.png`} width={200} height={200} alt=''/>
       </div>
   );
 };
 
-export default TopLeftImg;
+export default BottomLeftImg;

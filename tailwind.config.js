@@ -24,7 +24,7 @@ module.exports = {
       colors: {
         primary: '#131424',
         secondary: '#393A47',
-        accent: '#F13024',
+        accent: '#6488b4',
       },
       backgroundImage: {
         explosion: 'url("/portefeuille/bg-explosion.png")',
@@ -34,6 +34,9 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
+      },
+      rotate:{
+        '25':'25deg',
       },
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
