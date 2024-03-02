@@ -123,17 +123,16 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden mt-[1.1rem] fixed xl:flex -left-[350px]">
+            className="hidden bottom-0 mr-1 fixed xl:flex -left-[190px]">
           <Avatar/>
         </motion.div>
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1'> Learn <span className='text-accent'>.</span> Create <span className='text-accent'>.</span> Innovate
+              className='h1 mt-2 xl:mt-auto'> Learn <span className='text-accent'>.</span> Create <span className='text-accent'>.</span> Innovate
           </motion.h1>
-          <div className="grid w-full grid-cols-8 gap-16">
-
-            <div className='col-span-4 flex flex-col items-start justify-start'>
+          <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
+            <div className='md:col-span-4 flex flex-col items-start justify-start'>
               <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
               <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel, aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
 
@@ -144,29 +143,28 @@ const About = () => {
               <p>I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet magna. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Phasellus eu ex justo. Donec ullamcorper nulla non metus auctor fringilla.</p>
             </div>
 
-            <div className='col-span-4 flex flex-row items-center justify-between'>
-              <div className='flex flex-col items-start justify-center'>
+            <div className='md:col-span-4 flex flex-row items-center justify-between'>
+              <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
                 <span className='text-accent font-bold inline-block text-7xl'>
                   <AnimatedNumbers value={100}/> +
                 </span>
                 <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
               </div>
 
-              <div className='flex flex-col items-start justify-center'>
+              <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
                 <span className='text-accent font-bold inline-block text-7xl'>
                   <AnimatedNumbers value={50}/> +
                 </span>
                 <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
               </div>
 
-              <div className='flex flex-col items-start justify-center'>
+              <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
                 <span className='text-accent font-bold inline-block text-7xl'>
                   <AnimatedNumbers value={5}/> +
                 </span>
                 <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
               </div>
             </div>
-
           </div>
 
           <div className='flex flex-row justify-center items-center w-full'>
