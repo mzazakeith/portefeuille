@@ -20,6 +20,7 @@ import Avatar from "../../components/Avatar";
 import {motion, useAnimation, useInView, useMotionValue, useSpring} from 'framer-motion'
 import {fadeIn} from "../../variants";
 import {useEffect, useRef} from "react";
+import Experience from "../../components/Experience";
 
 //  data
 const aboutData = [
@@ -174,6 +175,8 @@ const About = () => {
               </svg>
             </div>
           </div>
+
+          <Experience/>
 
         </div>
       </div>
