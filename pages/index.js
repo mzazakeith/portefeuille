@@ -1,14 +1,17 @@
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
+import {RiDownloadLine} from "react-icons/ri";
+
 import Avatar from "../components/Avatar";
 
 import {motion} from 'framer-motion';
 
 import {fadeIn} from "../variants";
+import Link from "next/link";
 
 const Home = () => {
   return (
-      <div className='bg-primary/6- h-full page'>
+      <div className='h-full page'>
 
         <div className='w-full h-full'>
           <div className='flex flex-col justify-center text-center xl:pt-40 xl:text-left h-full container mx-auto'>
@@ -21,9 +24,22 @@ const Home = () => {
 
             <motion.p
                 variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
-                className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16'>
+                className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit erat, mattis in elit eget, ornare imperdiet dolor. Integer nec nunc laoreet, finibus turpis ac, molestie felis.
             </motion.p>
+
+              <motion.div
+                  variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden'
+                  className="flex self-center xl:self-start items-center"
+              >
+                  <Link
+                      className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
+                      bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
+                      border-accent
+                      "
+                      href="" target="_blank" >Résumé <RiDownloadLine className="w-6 ml-1"/></Link>
+                  <Link className="ml-4 capitalize underline" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
+              </motion.div>
 
           </div>
         </div>
