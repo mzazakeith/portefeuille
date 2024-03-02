@@ -1,10 +1,17 @@
 import {motion,useScroll} from "framer-motion";
 import {useRef} from "react";
+import LiIcon from "../components/Lilcon";
 
 const Details = ({position, company, companyLink, time, address, work}) =>{
+    const ref = useRef(null)
     return (
-        <li className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center">
-            <div>
+        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center">
+            <LiIcon reference={ref}/>
+            <motion.div
+            initial={{y:50}}
+            whileInView={{y:0}}
+            transition={{duration:0.5, type:"spring"}}
+            >
                 <h3 className="capitalize font-bold text-2xl">{position} <a
                     className="capitalize text-accent"
                     href={companyLink}
@@ -15,7 +22,7 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
                 <p className="font-medium w-full">
                     {work}
                 </p>
-            </div>
+            </motion.div>
         </li>
     )
 }
@@ -35,7 +42,7 @@ const Experience = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{scaleY:scrollYProgress}}
-                    className="absolute h-full left-8 top-0 w-[4px] bg-black origin-top"/>
+                    className="absolute h-full left-9 top-0 w-[4px] bg-black origin-top"/>
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
                         position='Software Developer' company='Amazon'
