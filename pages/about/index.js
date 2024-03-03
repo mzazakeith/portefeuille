@@ -21,6 +21,9 @@ import {motion, useAnimation, useInView, useMotionValue, useSpring} from 'framer
 import {fadeIn} from "../../variants";
 import {useEffect, useRef} from "react";
 import Experience from "../../components/Experience";
+import Education from "../../components/Education";
+import Link from "next/link";
+import {RiLinkedinFill} from "react-icons/ri";
 
 //  data
 const aboutData = [
@@ -177,6 +180,24 @@ const About = () => {
           </div>
 
           <Experience/>
+
+          <Education/>
+
+
+          <motion.div
+              initial={{y:50}}
+              whileInView={{y:0}}
+              transition={{duration:0.5, type:"spring"}}
+              className="flex self-center items-center"
+          >
+            <Link
+                className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
+                        bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
+                        border-accent
+                        "
+                href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank" >View Certifications <RiLinkedinFill className="text-black w-6 ml-1"/>
+            </Link>
+          </motion.div>
 
         </div>
       </div>
