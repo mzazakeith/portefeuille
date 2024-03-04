@@ -1,6 +1,36 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
-import Bulb from "../../components/Bulb";
+import Link from "next/link";
+import Image from "next/image";
+import {RiGithubLine} from "react-icons/ri";
+
+
+const FeaturedProject = ({type,title, summary, image, link, github}) =>{
+  return(
+      <article className="w-full flex items-center justify-between rounded-3xl
+      border border-solid border-black bg-[#ebdfd5] shadow-2xl p-12">
+        <Link href={link} target="_blank"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        >
+          <Image width={300} height={500} src={image} alt={title} className="w-full h-auto"/>
+        </Link>
+        <div className="w-1/2 flex flex-col items-start justify-between pl-6">
+          <span className="text-accent font-medium text-xl">{type}</span>
+          <Link href={link} target="_blank" className="hover:underline underline-offset-2">
+            <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          </Link>
+          <p className="my-2 font-medium text-black">{summary}</p>
+          <div className="mt-2 flex items-center">
+            <Link href={github}  target="_blank" className="text-[3rem] cursor-pointer"> <RiGithubLine /></Link>
+            <Link href={link}  target="_blank"
+                  className="ml-4 rounded-sm bg-black text-[#ebdfd5] p-2 px-6 cursor-pointer">Visit Project</Link>
+          </div>
+        </div>
+
+      </article>
+  )
+
+}
 
 const Projects = () => {
   return (
@@ -14,7 +44,15 @@ const Projects = () => {
 
             <div className="grid grid-cols-12 gap-24">
               <div className="col-span-12">
-                Featured Project
+                <FeaturedProject
+                    title="NextJS Portfolio Website"
+                    type="Featured Project"
+                    link="https://mzazakeith.github.io/portefeuille/"
+                    github="https://github.com/mzazakeith/portefeuille"
+                    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"
+                    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth
+                page transitions, cool background effects, unique design and it is mobile responsive."
+                />
               </div>
               <div className="col-span-6">
                 Project - 1
@@ -23,7 +61,15 @@ const Projects = () => {
                 Project - 2
               </div>
               <div className="col-span-12">
-                Featured Project -2
+                <FeaturedProject
+                    title="NextJS Portfolio Website"
+                    type="Featured Project"
+                    link="https://mzazakeith.github.io/portefeuille/"
+                    github="https://github.com/mzazakeith/portefeuille"
+                    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"
+                    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth
+                page transitions, cool background effects, unique design and it is mobile responsive."
+                />
               </div>
               <div className="col-span-6">
                 Project - 3
@@ -32,7 +78,15 @@ const Projects = () => {
                 Project - 4
               </div>
               <div className="col-span-12">
-                Featured Project - 3
+                <FeaturedProject
+                    title="NextJS Portfolio Website"
+                    type="Featured Project"
+                    link="https://mzazakeith.github.io/portefeuille/"
+                    github="https://github.com/mzazakeith/portefeuille"
+                    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"
+                    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth
+                page transitions, cool background effects, unique design and it is mobile responsive."
+                />
               </div>
               <div className="col-span-6">
                 Project - 5
