@@ -13,8 +13,8 @@ import {HiPhone} from "react-icons/hi";
 export const navData = [
   { name: 'home', path: '/', icon: <HiHome /> },
   { name: 'about', path: '/about', icon: <HiUser /> },
+  { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
   { name: 'services', path: '/services', icon: <HiRectangleGroup /> },
-  { name: 'work', path: '/work', icon: <HiViewColumns /> },
   {
     name: 'contact',
     path: '/contact',
