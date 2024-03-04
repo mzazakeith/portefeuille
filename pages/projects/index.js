@@ -1,5 +1,6 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
+import Bulb from "../../components/Bulb";
 
 const Projects = () => {
   return (
@@ -41,6 +42,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
+
         </div>
       </>
   );
