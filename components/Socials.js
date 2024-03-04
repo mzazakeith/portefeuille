@@ -1,7 +1,6 @@
 import Link from 'next/link'
 
-import {RiLinkedinLine, RiGithubLine} from "react-icons/ri";
-import {SiHashnode} from "react-icons/si";
+import {RiLinkedinLine, RiGithubLine, RiMailLine} from "react-icons/ri";
 
 
 const Socials = () => {
@@ -16,7 +15,7 @@ const Socials = () => {
         </Link>
 
       <Link href="" className="hover:text-accent transition-all duration-300 text-[1.40rem]">
-          <SiHashnode/>
+          <RiMailLine/>
       </Link>
       </div>);
 };
