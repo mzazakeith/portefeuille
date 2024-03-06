@@ -37,8 +37,8 @@ const Home = () => {
                       bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
                       border-accent
                       "
-                      href="" target="_blank" >Résumé <RiDownloadLine className="w-6 ml-1"/></Link>
-                  <Link className="z-40 ml-4 capitalize underline cursor-pointer p-1.5 px-6" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
+                      href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
+                  <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
               </motion.div>
 
           </div>
