@@ -13,10 +13,8 @@ const poppins = Poppins({
 });
 
 const Layout = ({children}) => {
-    const router = useRouter();
-    const pathname = router.pathname
   return(
-      <div className={`${pathname === "/" && 'page'} bg-[#ebdfd5] top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
+      <div className={`min-h-screen bg-[#ebdfd5] top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
         <Nav/>
         <Header/>
         {children}

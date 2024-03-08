@@ -11,7 +11,7 @@ import Link from "next/link";
 
 const Home = () => {
   return (
-      <div className='h-full page'>
+      <div className='h-full overflow-hidden'>
 
         <div className='w-full h-full'>
           <div className='flex flex-col justify-center text-center xl:pt-40 xl:text-left h-full container mx-auto'>
@@ -53,7 +53,7 @@ const Home = () => {
 
             <motion.div
                 variants={fadeIn('up', 0.5)} initial='hidden' animate='show' exit='hidden'
-                transition={{duration:1, ease:'easeInOut'}}
+                transition={{duration:1, ease:'easeIn'}}
                 className='w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]'>
                 <Avatar/>
             </motion.div>
