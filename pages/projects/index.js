@@ -9,8 +9,8 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
   return(
       <article className="w-full flex items-center justify-between relative rounded-3xl
       border border-solid border-black bg-[#ebdfd5] shadow-2xl p-12">
-
-        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-black '/>
+        {/*TODO: figure this shit out */}
+        {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-black '/>*/}
 
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
@@ -39,8 +39,9 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
 const Project = ({title, type, image, link, github}) => {
   return (
       <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-       border-black bg-[#ebdfd5] p-6 relative">
-        <div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-black '/>
+       border-black bg-[#ebdfd5] shadow-2xl p-6 relative">
+        {/*TODO: figure this shit out */}
+        {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-black '/>*/}
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
         >
@@ -72,7 +73,7 @@ const Projects = () => {
                 className='h1 mt-2 xl:mt-auto'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
             </motion.h1>
 
-            <div className="grid grid-cols-12 gap-24 gap-y-32">
+            <div className="grid grid-cols-12 gap-24 gap-y-28 mt-16">
               <div className="col-span-12">
                 <FeaturedProject
                     title="NextJS Portfolio Website"
