@@ -3,6 +3,7 @@ import {motion} from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import {RiGithubLine} from "react-icons/ri";
+import ProjectsBtn from "../../components/ProjectsBtn";
 
 
 const FeaturedProject = ({type,title, summary, image, link, github}) =>{
@@ -170,7 +171,7 @@ const Projects = () => {
               </div>
 
               <div className="col-span-6">
-                View More Button
+                <ProjectsBtn/>
               </div>
             </div>
           </div>
