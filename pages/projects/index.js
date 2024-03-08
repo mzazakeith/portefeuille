@@ -8,7 +8,11 @@ import ProjectsBtn from "../../components/ProjectsBtn";
 
 const FeaturedProject = ({type,title, summary, image, link, github}) =>{
   return(
-      <article className="w-full flex items-center justify-between relative rounded-3xl
+      <motion.article
+          initial={{y:50}}
+          whileInView={{y:0}}
+          transition={{duration:0.5, type:"spring"}}
+          className="w-full flex items-center justify-between relative rounded-3xl
       border border-solid border-black bg-[#ebdfd5] shadow-2xl p-12">
         {/*TODO: figure this shit out */}
         {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-black '/>*/}
@@ -31,7 +35,7 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
           </div>
         </div>
 
-      </article>
+      </motion.article>
   )
 
 }
@@ -39,7 +43,11 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
 
 const Project = ({title, type, image, link, github}) => {
   return (
-      <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
+      <motion.article
+          initial={{y:50}}
+          whileInView={{y:0}}
+          transition={{duration:0.5, type:"spring"}}
+          className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
        border-black bg-[#ebdfd5] shadow-2xl p-6 relative">
         {/*TODO: figure this shit out */}
         {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-black '/>*/}
@@ -60,7 +68,7 @@ const Project = ({title, type, image, link, github}) => {
             <Link href={github} target="_blank" className="text-[2rem] cursor-pointer"> <RiGithubLine/></Link>
           </div>
         </div>
-      </article>
+      </motion.article>
   )
 }
 
