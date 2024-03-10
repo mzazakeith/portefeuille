@@ -14,22 +14,24 @@ import {
 
 import {useAnimate} from "framer-motion";
 
+const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
+const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)";
 
 const LinkBox = ({Icon, href}) =>{
     const [scope, animate] = useAnimate()
 
     const handleMouseEnter = (e) =>{
-        // animate(scope.current, {
-        //     clipPath: ENTRANCE_KEYFRAMES[side],
-        // });
         console.log("Mouse enter")
+        animate(scope.current, {
+            clipPath: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+        });
     }
 
     const handleMouseLeave = (e) => {
-        // animate(scope.current, {
-        //     clipPath: EXIT_KEYFRAMES[side],
-        // });
         console.log("Mouse leave")
+        animate(scope.current, {
+            clipPath: [NO_CLIP, BOTTOM_RIGHT_CLIP]
+        });
     }
 
     return (
