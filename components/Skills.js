@@ -12,16 +12,41 @@ import {
 
 } from "react-icons/si";
 
+import {useAnimate} from "framer-motion";
+
 
 const LinkBox = ({Icon, href}) =>{
+    const [scope, animate] = useAnimate()
+
+    const handleMouseEnter = (e) =>{
+        // animate(scope.current, {
+        //     clipPath: ENTRANCE_KEYFRAMES[side],
+        // });
+        console.log("Mouse enter")
+    }
+
+    const handleMouseLeave = (e) => {
+        // animate(scope.current, {
+        //     clipPath: EXIT_KEYFRAMES[side],
+        // });
+        console.log("Mouse leave")
+    }
+
     return (
         <a
+            onMouseEnter={(e)=>handleMouseEnter(e)}
+            onMouseLeave={(e)=>handleMouseLeave(e)}
             href={href}
-            className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36">
+            className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
+        >
+
+
             <Icon className="text-xl sm:text-3xl md:text-4xl text-accent"/>
 
             {/*overlay div*/}
-            <div className="absolute inset-0 grid place-content-center bg-accent">
+            <div
+                ref={scope}
+                className="absolute inset-0 grid place-content-center bg-accent">
                 <Icon className="text-xl sm:text-3xl md:text-4xl text-black"/>
             </div>
         </a>
