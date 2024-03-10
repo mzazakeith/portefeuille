@@ -18,7 +18,12 @@ const LinkBox = ({Icon, href}) =>{
         <a
             href={href}
             className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36">
-            <Icon className="text-xl sm:text-3xl md:text-4xl"/>
+            <Icon className="text-xl sm:text-3xl md:text-4xl text-accent"/>
+
+            {/*overlay div*/}
+            <div className="absolute inset-0 grid place-content-center bg-accent">
+                <Icon className="text-xl sm:text-3xl md:text-4xl text-black"/>
+            </div>
         </a>
     );
 };
