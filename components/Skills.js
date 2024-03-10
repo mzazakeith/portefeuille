@@ -1,18 +1,15 @@
-import { FaJava, FaNode } from "react-icons/fa";
+import { FaNode } from "react-icons/fa";
 import { BiLogoSpringBoot } from "react-icons/bi";
-
+import {SiAmazonaws, SiKubernetes,} from "react-icons/si";
 import {
-    SiAmazonaws,
-    SiAnsible,
-    SiKubernetes,
-    SiNextdotjs,
-    SiPython,
-    SiReact,
-    SiTerraform,
-
-} from "react-icons/si";
+    TbBrandNextjs,
+    TbBrandAnsible,
+    TbBrandTerraform,
+    TbBrandPython,
+    TbBrandReact } from "react-icons/tb";
 
 import {useAnimate} from "framer-motion";
+
 
 const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
 const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)";
@@ -43,13 +40,13 @@ const LinkBox = ({Icon, href}) =>{
         >
 
 
-            <Icon className="text-xl sm:text-3xl md:text-4xl text-accent"/>
+            <Icon className="text-xl sm:text-3xl md:text-4xl text-neutral-900"/>
 
             {/*overlay div*/}
             <div
                 ref={scope}
                 className="absolute inset-0 grid place-content-center bg-accent">
-                <Icon className="text-xl sm:text-3xl md:text-4xl text-black"/>
+                <Icon className="text-xl sm:text-3xl md:text-4xl text-neutral-900"/>
             </div>
         </a>
     );
@@ -59,20 +56,20 @@ const ClipPathLinks = () => {
     return(
         <div className="border border-neutral-900 divide-y divide-neutral-900">
             <div className="grid grid-cols-2 divide-x divide-neutral-900">
-                <LinkBox Icon={SiReact} href="" />
-                <LinkBox Icon={SiNextdotjs} href="" />
+                <LinkBox Icon={TbBrandReact} href="" />
+                <LinkBox Icon={TbBrandNextjs} href="" />
             </div>
 
             <div className="grid grid-cols-4 divide-x divide-neutral-900">
+                <LinkBox Icon={TbBrandTerraform} href="" />
                 <LinkBox Icon={SiAmazonaws} href="" />
-                <LinkBox Icon={SiTerraform} href="" />
-                <LinkBox Icon={SiAnsible} href="" />
+                <LinkBox Icon={TbBrandAnsible} href="" />
                 <LinkBox Icon={SiKubernetes} href="" />
             </div>
 
             <div className="grid grid-cols-3 divide-x divide-neutral-900">
+                <LinkBox Icon={TbBrandPython} href="" />
                 <LinkBox Icon={FaNode} href="" />
-                <LinkBox Icon={SiPython} href="" />
                 <LinkBox Icon={BiLogoSpringBoot} href="" />
             </div>
         </div>
