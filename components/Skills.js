@@ -25,15 +25,21 @@ const ClipPathLinks = () => {
     return(
         <div className="border border-neutral-900 divide-y divide-neutral-900">
             <div className="grid grid-cols-2 divide-x divide-neutral-900">
-
+                <LinkBox Icon={SiReact} href="" />
+                <LinkBox Icon={SiNextdotjs} href="" />
             </div>
 
             <div className="grid grid-cols-4 divide-x divide-neutral-900">
-
+                <LinkBox Icon={SiAmazonaws} href="" />
+                <LinkBox Icon={SiTerraform} href="" />
+                <LinkBox Icon={SiAnsible} href="" />
+                <LinkBox Icon={SiKubernetes} href="" />
             </div>
 
             <div className="grid grid-cols-3 divide-x divide-neutral-900">
-
+                <LinkBox Icon={FaNode} href="" />
+                <LinkBox Icon={SiPython} href="" />
+                <LinkBox Icon={BiLogoSpringBoot} href="" />
             </div>
         </div>
     )
