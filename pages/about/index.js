@@ -24,6 +24,7 @@ import Experience from "../../components/Experience";
 import Education from "../../components/Education";
 import Link from "next/link";
 import {RiLinkedinFill} from "react-icons/ri";
+import Skills from "../../components/Skills";
 
 //  data
 const aboutData = [
@@ -178,6 +179,8 @@ const About = () => {
               </svg>
             </div>
           </div>
+
+          <Skills/>
 
           <Experience/>
 
