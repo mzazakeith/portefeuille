@@ -15,8 +15,10 @@ import {
 
 const LinkBox = ({Icon, href}) =>{
     return (
-        <a href={href}>
-            <Icon/>
+        <a
+            href={href}
+            className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36">
+            <Icon className="text-xl sm:text-3xl md:text-4xl"/>
         </a>
     );
 };
@@ -48,7 +50,7 @@ const ClipPathLinks = () => {
 
 const Skills = () => {
     return(
-        <div className="px-4 py-12">
+        <div className="px-4 py-12 w-full">
             <h2 className="font-bold text-8xl mb-32 w-full text-center">Skills</h2>
             <div className="mx-auto max-w-7xl">
                 <ClipPathLinks/>
