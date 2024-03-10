@@ -1,9 +1,40 @@
+import { FaJava, FaNode } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+
+import {
+    SiAmazonaws,
+    SiAnsible,
+    SiKubernetes,
+    SiNextdotjs,
+    SiPython,
+    SiReact,
+    SiTerraform,
+
+} from "react-icons/si";
 
 
-const ClipPathLinks = () =>{
+const LinkBox = ({Icon, href}) =>{
+    return (
+        <a href={href}>
+            <Icon/>
+        </a>
+    );
+};
+
+const ClipPathLinks = () => {
     return(
-        <div className="">
+        <div className="border border-neutral-900 divide-y divide-neutral-900">
+            <div className="grid grid-cols-2 divide-x divide-neutral-900">
 
+            </div>
+
+            <div className="grid grid-cols-4 divide-x divide-neutral-900">
+
+            </div>
+
+            <div className="grid grid-cols-3 divide-x divide-neutral-900">
+
+            </div>
         </div>
     )
 }
