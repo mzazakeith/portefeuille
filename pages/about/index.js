@@ -122,7 +122,7 @@ const AnimatedNumbers = ({value}) =>{
 
 const About = () => {
   return (
-      <div className="h-full py-32 text-center xl:text-left">
+      <div className="h-full pt-16 pb-32 text-center xl:text-left">
         <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"
