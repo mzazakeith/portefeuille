@@ -1,11 +1,51 @@
 import Image from "next/image";
 import {useRouter} from "next/router";
-
+import {useRef, useState} from "react";
+import {motion} from "framer-motion";
 
 const BusinessCard = () => {
+    const divRef = useRef(null);
     const router = useRouter();
+    const [rotateY, setRotateY] = useState(0);
+    const [rotateX, setRotateX] = useState(0);
+
+    const handleMouseMove = (e) => {
+        if(!divRef.current) return;
+
+        const rect = divRef.current.getBoundingClientRect()
+
+        const width = rect.width;
+        const height = rect.height;
+
+        const ROTATION_RANGE_DEGREES = 35;
+        const HALF_ROTATION_RANGE = ROTATION_RANGE_DEGREES / 2;
+
+        const mouseX = (e.clientX - rect.left) * ROTATION_RANGE_DEGREES;
+        const mouseY = (e.clientY - rect.top) * ROTATION_RANGE_DEGREES;
+
+        const rX = mouseX / width - HALF_ROTATION_RANGE;
+        const rY = (mouseY / height - HALF_ROTATION_RANGE) * -1;
+
+        setRotateX(rX);
+        setRotateY(rY);
+    };
+
+    const handleMouseLeave = () => {
+        setRotateX(0);
+        setRotateY(0);
+    };
+
     return(
-        <div
+        <motion.div
+            ref={divRef}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{
+                transformStyle: "preserve-3d",
+                transition: "linear 0.8s",
+                rotateY: rotateY,
+                rotateX: rotateX
+            }}
             className="relative min-h-[200px] max-w-[400px] w-full rounded-lg shadow-2xl bg-[#BEB5AF] m-8 mt-16 overflow-hidden">
             <div className="flex flex-col justify-center m-4 mb-0">
                 <div className="flex flex-row items-start justify-between z-10">
@@ -44,7 +84,7 @@ const BusinessCard = () => {
             <div className="absolute right-0 bottom-0 z-0">
                 <div className="w-[260px] h-[260px] bg-[#A69F99]/50 rounded-full"></div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

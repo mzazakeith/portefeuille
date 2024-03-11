@@ -3,7 +3,9 @@ import {motion} from "framer-motion";
 import BusinessCard from "../../components/BusinessCard";
 
 const Contact = () => {
-  return (
+
+
+    return (
       <div className="h-full pt-16 pb-32 text-center">
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
