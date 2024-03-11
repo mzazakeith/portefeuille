@@ -214,6 +214,14 @@ const About = () => {
 
           <Experience/>
 
+          <div className='flex flex-row justify-center items-center w-full mt-8'>
+            <div className="text-accent inline-block animate-bounce hover:animate-none">
+              <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+              </svg>
+            </div>
+          </div>
+
           <Education/>
 
 
