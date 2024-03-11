@@ -22,7 +22,8 @@ const FeaturedItem = ({image, title, time, summary, link}) => {
 
 const More = () => {
   return (
-      <div className="h-full w-full flex flex-col items-center justify-center overflow-hidden pt-16 pb-32 text-center">
+      <div className="h-full w-full flex flex-col items-center
+      justify-center overflow-hidden pt-16 pb-32 text-center container mx-auto">
         <motion.h1
             variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
             className='h1 mt-2 xl:mt-auto'>
