@@ -1,9 +1,12 @@
 import Link from 'next/link'
 
 import {RiLinkedinLine, RiGithubLine, RiMailLine} from "react-icons/ri";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
+import {MoonIcon, SunIcon} from "./ThemeSwitcherIcons";
 
 
 const Socials = () => {
+    const [mode, setMode] = useThemeSwitcher();
   return (
       <div className="flex items-center gap-x-5">
         <Link target="_blank" href="" className="hover:text-accent transition-all duration-300 text-[1.50rem]">
@@ -14,9 +17,17 @@ const Socials = () => {
           <RiGithubLine/>
         </Link>
 
-      <Link target="_blank" href="" className="hover:text-accent transition-all duration-300 text-[1.40rem]">
-          <RiMailLine/>
-      </Link>
+          <Link target="_blank" href="" className="hover:text-accent transition-all duration-300 text-[1.40rem]">
+              <RiMailLine/>
+          </Link>
+
+          <button>
+              {mode === "dark" ?
+                  <SunIcon className="fill-neutral-900"/>
+                  :
+                  <MoonIcon className="fill-neutral-900"/>
+              }
+          </button>
       </div>);
 };
 
