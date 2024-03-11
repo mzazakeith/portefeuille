@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {useRouter} from "next/router";
 import {RiGithubFill} from "react-icons/ri";
-import {HiArrowRight} from "react-icons/hi";
 
 const ProjectsBtn = () => {
   const router = useRouter();

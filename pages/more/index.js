@@ -1,7 +1,6 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const Article = ({title, date, link}) =>{
     return(

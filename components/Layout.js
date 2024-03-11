@@ -2,7 +2,6 @@ import {Poppins} from '@next/font/google';
 
 import Nav from '../components/Nav'
 import Header from "../components/Header";
-import {useRouter} from "next/router";
 import BottomRightImg from "./BottomRightImg";
 import BottomLeftImg from "./BottomLeftImg";
 

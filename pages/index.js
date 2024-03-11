@@ -1,5 +1,4 @@
 import ParticlesContainer from "../components/ParticlesContainer";
-import ProjectsBtn from "../components/ProjectsBtn";
 import {RiDownloadLine} from "react-icons/ri";
 
 import Avatar from "../components/Avatar";
