@@ -35,7 +35,7 @@ const Home = () => {
                   <Link
                       className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
                       bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
-                      border-accent
+                      border-accent uppercase
                       "
                       href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
                   <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>

@@ -197,7 +197,7 @@ const About = () => {
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
                         bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
-                        border-accent
+                        border-accent uppercase
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
               More <RiLinkedinFill className="text-black w-6 ml-1"/>
@@ -234,10 +234,10 @@ const About = () => {
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
                         bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
-                        border-accent
+                        border-accent uppercase
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
-              Certifications <RiLinkedinFill className="text-black w-6 ml-1"/>
+              Certifications <RiLinkedinFill className="text-neutral-900 w-6 ml-1"/>
             </Link>
           </motion.div>
 
