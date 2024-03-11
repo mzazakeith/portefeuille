@@ -34,17 +34,30 @@ const EXIT_KEYFRAMES = {
 const LinkBox = ({Icon, href}) =>{
     const [scope, animate] = useAnimate()
 
+    const getNearestSide = (e) => {
+        const tile = e.target.getBoundingClientRect();
+        const sides = ["left", "right", "top", "bottom"];
+        const proximity = sides.map(side => ({
+            proximity: Math.abs(tile[side] - (side === "left" || side === "top" ? e.clientX : e.clientY)),
+            side: side
+        }));
+
+        return proximity.sort((a, b) => a.proximity - b.proximity)[0].side;
+    };
+
     const handleMouseEnter = (e) =>{
         console.log("Mouse enter")
+        const nearestSide = getNearestSide(e);
         animate(scope.current, {
-            clipPath: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+            clipPath: ENTRANCE_KEYFRAMES[nearestSide]
         });
     }
 
     const handleMouseLeave = (e) => {
         console.log("Mouse leave")
+        const nearestSide = getNearestSide(e);
         animate(scope.current, {
-            clipPath: [NO_CLIP, BOTTOM_RIGHT_CLIP]
+            clipPath: EXIT_KEYFRAMES[nearestSide]
         });
     }
 
