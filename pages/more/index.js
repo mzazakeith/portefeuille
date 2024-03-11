@@ -3,7 +3,14 @@ import {motion} from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
-
+const Article = ({title, date, link}) =>{
+    return(
+        <li>
+            <Link href={link} target="_blank">{title}</Link>
+            <span>{date}</span>
+        </li>
+    )
+}
 const Background = ( ) => {
   return (
       <motion.svg
@@ -140,6 +147,20 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
+          <h2 className="font-bold text-4xl text-center my-16 mt-32">Featured Articles</h2>
+          <ul>
+              <Article
+                  title="NextJS Portfolio Website"
+                  date="March 11, 2024"
+                  link="https://mzazakeith.github.io/portefeuille/"
+              />
+
+              <Article
+                  title="NextJS Portfolio Website"
+                  date="March 11, 2024"
+                  link="https://mzazakeith.github.io/portefeuille/"
+              />
+          </ul>
       </div>
   )
 };
