@@ -25,11 +25,26 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
             <h2 className="my-2 w-full text-left text-4xl font-medium uppercase">{title}</h2>
           </Link>
           <p className="my-2 text-neutral-900">{summary}</p>
+          <div className="flex flex-row gap-2">
+            <span className="flex flex-col justify-center text-sm mb-2 uppercase">
+              Main Tech :
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              React
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              ThreeJS
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              NodeJs
+            </span>
+          </div>
           <div className="mt-2 flex items-center">
             <Link href={github} target="_blank" className="text-[3rem] cursor-pointer"> <RiGithubLine/></Link>
             <Link href={link} target="_blank"
                   className="ml-4 rounded-md bg-neutral-900 uppercase text-[#ebdfd5] border border-solid
-                  p-2 px-6 cursor-pointer hover:bg-[#ebdfd5] hover:border-neutral-900 hover:text-neutral-900">Visit Project</Link>
+                  p-2 px-6 cursor-pointer hover:bg-[#ebdfd5] hover:border-neutral-900 hover:text-neutral-900">Visit
+              Project</Link>
           </div>
         </div>
 
@@ -42,9 +57,9 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
 const Project = ({title, type, image, link, github}) => {
   return (
       <motion.article
-          initial={{y:50}}
-          whileInView={{y:0}}
-          transition={{duration:0.5, type:"spring"}}
+          initial={{y: 50}}
+          whileInView={{y: 0}}
+          transition={{duration: 0.5, type: "spring"}}
           className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
        border-neutral-900 bg-[#ebdfd5] shadow-2xl p-6 relative border-r-8 border-b-8">
 
@@ -58,6 +73,20 @@ const Project = ({title, type, image, link, github}) => {
           <Link href={link} target="_blank" className="hover:underline underline-offset-2">
             <h2 className="my-2 w-full text-left text-3xl font-medium uppercase">{title}</h2>
           </Link>
+          <div className="flex flex-row gap-2">
+            <span className="flex flex-col justify-center text-sm mb-2 uppercase">
+              Main Tech :
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              React
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              ThreeJS
+            </span>
+            <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
+              NodeJs
+            </span>
+          </div>
           <div className="w-full mt-2 flex items-center justify-between">
             <Link href={link} target="_blank"
                   className="text-lg cursor-pointer underline uppercase hover:text-accent/90">Visit</Link>
