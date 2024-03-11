@@ -1,5 +1,6 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
+import BusinessCard from "../../components/BusinessCard";
 
 const Contact = () => {
   return (
@@ -10,6 +11,7 @@ const Contact = () => {
               className='h1 mt-2 xl:mt-auto'>
             Get In Touch
           </motion.h1>
+            <BusinessCard/>
         </div>
       </div>
   )
