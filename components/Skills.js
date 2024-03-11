@@ -10,9 +10,26 @@ import {
 
 import {useAnimate} from "framer-motion";
 
-
+// Using Clippy
 const NO_CLIP = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
 const BOTTOM_RIGHT_CLIP = "polygon(0 0, 100% 0, 0 0, 0% 100%)";
+const TOP_RIGHT_CLIP = "polygon(0 0, 0 100%, 100% 100%, 0% 100%)";
+const BOTTOM_LEFT_CLIP = "polygon(100% 100%, 100% 0, 100% 100%, 0 100%)";
+const TOP_LEFT_CLIP = "polygon(0 0, 100% 0, 100% 100%, 100% 0)";
+
+const ENTRANCE_KEYFRAMES = {
+    left: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+    bottom: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+    top: [BOTTOM_RIGHT_CLIP, NO_CLIP],
+    right: [TOP_LEFT_CLIP, NO_CLIP],
+};
+
+const EXIT_KEYFRAMES = {
+    left: [NO_CLIP, TOP_RIGHT_CLIP],
+    bottom: [NO_CLIP, TOP_RIGHT_CLIP],
+    top: [NO_CLIP, TOP_RIGHT_CLIP],
+    right: [NO_CLIP, BOTTOM_LEFT_CLIP],
+};
 
 const LinkBox = ({Icon, href}) =>{
     const [scope, animate] = useAnimate()
