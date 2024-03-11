@@ -14,7 +14,7 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex items-center justify-between relative rounded-3xl
-      border border-solid border-neutral-900 bg-neutral-900 shadow-2xl p-12 border-r-8 border-b-8">
+      border border-solid border-neutral-900 bg-primary shadow-2xl p-12 border-r-8 border-b-8">
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
