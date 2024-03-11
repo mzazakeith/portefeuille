@@ -26,10 +26,6 @@ module.exports = {
         secondary: '#393A47',
         accent: '#6488b4',
       },
-      backgroundImage: {
-        circles: 'url("/portefeuille/bg-circles.png")',
-        circleStar: 'url("/portefeuille/circle-star.svg")',
-      },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
       },
