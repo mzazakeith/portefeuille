@@ -5,10 +5,23 @@ import Image from "next/image";
 
 const Article = ({title, date, link}) =>{
     return(
-        <li>
-            <Link href={link} target="_blank">{title}</Link>
-            <span>{date}</span>
-        </li>
+        <motion.li
+            whileHover="hover"
+            transition={{
+                duration: 0.8,
+                ease: "backInOut",
+            }}
+            variants={{
+                hover: {
+                    scale: 1.02,
+                },
+            }}
+            className="relative w-full first:mt-0 p-4 py-2 my-4 rounded-lg flex h-[4rem] items-center justify-between border border-solid border-neutral-800
+         border-r-4 border-b-4 hover:text-accent
+        ">
+            <Link href={link} target="_blank" className="underline">{title}</Link>
+            <span className="text-accent font-semibold pl-4">{date}</span>
+        </motion.li>
     )
 }
 const Background = ( ) => {
@@ -148,7 +161,19 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
           <h2 className="font-bold text-4xl text-center my-16 mt-32">Featured Articles</h2>
-          <ul>
+          <ul className="w-full">
+              <Article
+                  title="NextJS Portfolio Website"
+                  date="March 11, 2024"
+                  link="https://mzazakeith.github.io/portefeuille/"
+              />
+
+              <Article
+                  title="NextJS Portfolio Website"
+                  date="March 11, 2024"
+                  link="https://mzazakeith.github.io/portefeuille/"
+              />
+
               <Article
                   title="NextJS Portfolio Website"
                   date="March 11, 2024"
