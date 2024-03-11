@@ -32,8 +32,8 @@ const Home = () => {
                   className="flex self-center xl:self-start items-center"
               >
                   <Link
-                      className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
-                      bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
+                      className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
+                      bg-primary text-accent border border-solid hover:border-transparent
                       border-accent uppercase
                       "
                       href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>

@@ -14,7 +14,7 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex items-center justify-between relative rounded-3xl
-      border border-solid border-neutral-900 bg-[#ebdfd5] shadow-2xl p-12 border-r-8 border-b-8">
+      border border-solid border-neutral-900 bg-primary shadow-2xl p-12 border-r-8 border-b-8">
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
@@ -50,8 +50,8 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
           <div className="mt-2 flex items-center">
             <Link href={github} target="_blank" className="text-[3rem] cursor-pointer"> <RiGithubLine/></Link>
             <Link href={link} target="_blank"
-                  className="ml-4 rounded-md bg-neutral-900 uppercase text-[#ebdfd5] border border-solid
-                  p-2 px-6 cursor-pointer hover:bg-[#ebdfd5] hover:border-neutral-900 hover:text-neutral-900">Visit
+                  className="ml-4 rounded-md bg-neutral-900 uppercase text-primary border border-solid
+                  p-2 px-6 cursor-pointer hover:bg-primary hover:border-neutral-900 hover:text-neutral-900">Visit
               Project</Link>
           </div>
         </div>
@@ -69,7 +69,7 @@ const Project = ({title, type, image, link, github}) => {
           whileInView={{y: 0}}
           transition={{duration: 0.5, type: "spring"}}
           className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-       border-neutral-900 bg-[#ebdfd5] shadow-2xl p-6 relative border-r-8 border-b-8">
+       border-neutral-900 bg-primary shadow-2xl p-6 relative border-r-8 border-b-8">
 
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
