@@ -1,6 +1,7 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
 import BusinessCard from "../../components/BusinessCard";
+import Footer from "../../components/Footer";
 
 const Contact = () => {
 
@@ -14,6 +15,7 @@ const Contact = () => {
             Get In Touch
           </motion.h1>
             <BusinessCard/>
+            <Footer/>
         </div>
       </div>
   )
