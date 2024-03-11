@@ -5,6 +5,7 @@ import Image from "next/image";
 import {RiGithubLine} from "react-icons/ri";
 import ProjectsBtn from "../../components/ProjectsBtn";
 
+const FramerImage = motion(Image)
 
 const FeaturedProject = ({type,title, summary, image, link, github}) =>{
   return(
@@ -17,7 +18,14 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
-          <Image width={300} height={500} src={image} alt={title} className="w-full h-auto"/>
+          <FramerImage
+              whileHover={{scale:1.05}}
+              transition={{duration:0.2}}
+              width={300}
+              height={500}
+              src={image}
+              alt={title}
+              className="w-full h-auto"/>
         </Link>
         <div className="w-1/2 flex flex-col items-start justify-between pl-6">
           <span className="text-accent font-light uppercase text-xl">{type}</span>
@@ -66,7 +74,10 @@ const Project = ({title, type, image, link, github}) => {
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
         >
-          <Image width={300} height={500} src={image} alt={title} className="w-full h-auto"/>
+          <FramerImage
+              whileHover={{scale:1.05}}
+              transition={{duration:0.2}}
+              width={300} height={500} src={image} alt={title} className="w-full h-auto"/>
         </Link>
         <div className="w-full flex flex-col items-start justify-between mt-4">
           <span className="text-accent font-light uppercase text-xl">{type}</span>
