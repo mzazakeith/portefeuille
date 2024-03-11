@@ -14,7 +14,11 @@ const Contact = () => {
               className='h1 mt-2 xl:mt-auto uppercase font-light'>
             Get In Touch
           </motion.h1>
-            <BusinessCard/>
+            <motion.div
+                variants={fadeIn('up', 0.2)} initial='hidden' animate='show' exit='hidden'
+            >
+                <BusinessCard/>
+            </motion.div>
             <Footer/>
         </div>
       </div>
