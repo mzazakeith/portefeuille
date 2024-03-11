@@ -17,7 +17,7 @@ import {
 
 import Avatar from "../../components/Avatar";
 
-import {motion, useAnimation, useInView, useMotionValue, useSpring} from 'framer-motion'
+import {motion, useInView, useMotionValue, useSpring} from 'framer-motion'
 import {fadeIn} from "../../variants";
 import {useEffect, useRef} from "react";
 import Experience from "../../components/Experience";
@@ -195,8 +195,8 @@ const About = () => {
               className="flex self-center items-center mt-16"
           >
             <Link
-                className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
-                        bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
+                className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
+                        bg-primary text-accent border border-solid hover:border-transparent
                         border-accent uppercase
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
@@ -232,8 +232,8 @@ const About = () => {
               className="flex self-center items-center"
           >
             <Link
-                className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
-                        bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
+                className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
+                        bg-primary text-accent border border-solid hover:border-transparent
                         border-accent uppercase
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View

@@ -77,7 +77,7 @@ const LinkBox = ({Icon, href}) =>{
                 ref={scope}
                 style={{clipPath:BOTTOM_RIGHT_CLIP}}
                 className="absolute inset-0 grid place-content-center bg-neutral-900">
-                <Icon className="text-xl sm:text-3xl md:text-4xl text-[#ebdfd5]"/>
+                <Icon className="text-xl sm:text-3xl md:text-4xl text-primary"/>
             </div>
         </a>
     );

@@ -1,7 +1,6 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 const Article = ({title, date, link}) =>{
     return(
@@ -103,7 +102,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
               scale: 1.05,
             },
           }}
-          className="relative h-[30rem] w-[30rem] shrink-0 overflow-hidden col-span-1 p-4 bg-[#ebdfd5] border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
+          className="relative h-[30rem] w-[30rem] shrink-0 overflow-hidden col-span-1 p-4 bg-primary border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
           <div className="relative z-10 text-accent text-left">
             <span className="mb-3 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
           {type}

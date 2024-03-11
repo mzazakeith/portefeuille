@@ -2,7 +2,6 @@ import {Poppins} from '@next/font/google';
 
 import Nav from '../components/Nav'
 import Header from "../components/Header";
-import {useRouter} from "next/router";
 import BottomRightImg from "./BottomRightImg";
 import BottomLeftImg from "./BottomLeftImg";
 
@@ -14,7 +13,7 @@ const poppins = Poppins({
 
 const Layout = ({children}) => {
   return(
-      <div className={`min-h-screen bg-[#ebdfd5] top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
+      <div className={`min-h-screen bg-primary top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
         <Nav/>
         <Header/>
         {children}

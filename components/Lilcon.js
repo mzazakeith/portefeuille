@@ -13,7 +13,7 @@ const LiIcon = ({reference}) => {
                 <circle cx="75" cy="50" r="20" className="stroke-accent stroke-1 fill-none"/>
                 <motion.circle style={{
                     pathLength: scrollYProgress
-                }} cx="75" cy="50" r="20" className="stroke-[5px] fill-[#ebdfd5]"/>
+                }} cx="75" cy="50" r="20" className="stroke-[5px] fill-primary"/>
                 <circle cx="75" cy="50" r="10" className="animate-pulse stroke-1 fill-accent"/>
             </svg>
         </figure>

@@ -4,9 +4,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
-
-    // Or if using `src` directory:
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     container: {
@@ -22,8 +19,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131424',
-        secondary: '#393A47',
+        primary: '#ebdfd5',
         accent: '#6488b4',
       },
       animation: {
@@ -35,11 +31,6 @@ module.exports = {
       fontFamily: {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
       },
-    },
-  },
-  container: {
-    padding: {
-      DEFAULT: '15px',
     },
   },
   plugins: [require('tailwind-scrollbar')],
