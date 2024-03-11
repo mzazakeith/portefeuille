@@ -134,49 +134,45 @@ const About = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto'> Learn <span className='text-accent'>.</span> Create <span
+              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900'> Learn <span className='text-accent'>.</span> Create <span
               className='text-accent'>.</span> Innovate
           </motion.h1>
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
             <div className='md:col-span-4 flex flex-col items-start justify-start'>
-              <h2 className='mb-4 text-lg font-bold uppercase text-dark/75'>Biography</h2>
+              <h2 className='text-xl uppercase font-light text-neutral-900 underline mt-8 mb-9'>PERSONAL SUMMARY</h2>
               <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar
                 vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
-
+              <br/>
               <p>I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris.
                 Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. Donec ullamcorper nulla non metus auctor
                 fringilla.</p>
-
-              <p>Whether I am working on lorem ipsum, lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel
-                risus egestas, fringilla vel, aliquet magna.</p>
-
+              <br/>
               <p>I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet
-                magna. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris. Phasellus eu ex justo.
-                Donec ullamcorper nulla non metus auctor fringilla.</p>
+                magna.</p>
             </div>
 
             <div className='md:col-span-4 flex flex-row items-center justify-between'>
               <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
-                <span className='text-accent font-bold inline-block text-7xl'>
+                <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={100}/> +
                 </span>
-                <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
               </div>
 
-              <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
-                <span className='text-accent font-bold inline-block text-7xl'>
+              <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
+                <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={50}/> +
                 </span>
-                <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
               </div>
 
-              <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
-                <span className='text-accent font-bold inline-block text-7xl'>
+              <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
+                <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={5}/> +
                 </span>
-                <h2 className='text-xl font-medium capitalize'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
               </div>
             </div>
           </div>
