@@ -134,7 +134,8 @@ const About = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900'> Learn <span className='text-accent'>.</span> Create <span
+              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900'> Learn <span
+              className='text-accent'>.</span> Create <span
               className='text-accent'>.</span> Innovate
           </motion.h1>
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
@@ -178,7 +179,7 @@ const About = () => {
           </div>
 
           <div className='flex flex-row justify-center items-center w-full'>
-            <div className="text-accent inline-block animate-bounce">
+            <div className="text-accent inline-block animate-bounce hover:animate-none">
               <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
               </svg>
@@ -191,7 +192,7 @@ const About = () => {
               initial={{y: 50}}
               whileInView={{y: 0}}
               transition={{duration: 0.5, type: "spring"}}
-              className="flex self-center items-center pt-12"
+              className="flex self-center items-center mt-16"
           >
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
@@ -202,6 +203,14 @@ const About = () => {
               More <RiLinkedinFill className="text-black w-6 ml-1"/>
             </Link>
           </motion.div>
+
+          <div className='flex flex-row justify-center items-center w-full mt-10'>
+            <div className="text-accent inline-block animate-bounce hover:animate-none">
+              <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
+              </svg>
+            </div>
+          </div>
 
           <Experience/>
 
