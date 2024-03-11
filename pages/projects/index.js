@@ -46,7 +46,7 @@ const Project = ({title, type, image, link, github}) => {
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-       border-black/50 bg-[#ebdfd5] shadow-2xl p-6 relative border-r-8 border-b-8">
+       border-neutral-900 bg-[#ebdfd5] shadow-2xl p-6 relative border-r-8 border-b-8">
 
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
@@ -54,14 +54,13 @@ const Project = ({title, type, image, link, github}) => {
           <Image width={300} height={500} src={image} alt={title} className="w-full h-auto"/>
         </Link>
         <div className="w-full flex flex-col items-start justify-between mt-4">
-          <span className="text-accent font-medium text-xl">{type}</span>
+          <span className="text-accent font-light uppercase text-xl">{type}</span>
           <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-            <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+            <h2 className="my-2 w-full text-left text-3xl font-medium uppercase">{title}</h2>
           </Link>
-          {/*<p className="my-2 font-medium text-black">{summary}</p>*/}
           <div className="w-full mt-2 flex items-center justify-between">
             <Link href={link} target="_blank"
-                  className="text-lg rounded-sm cursor-pointer underline">Visit</Link>
+                  className="text-lg cursor-pointer underline uppercase hover:text-accent/90">Visit</Link>
             <Link href={github} target="_blank" className="text-[2rem] cursor-pointer"> <RiGithubLine/></Link>
           </div>
         </div>
