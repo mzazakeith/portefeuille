@@ -21,7 +21,7 @@ const Socials = () => {
               <RiMailLine/>
           </Link>
 
-          <button>
+          <button onClick={()=>setMode(mode === "light" ? "dark" : "light")}>
               {mode === "dark" ?
                   <SunIcon className="fill-neutral-900"/>
                   :
