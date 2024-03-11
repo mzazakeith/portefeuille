@@ -64,20 +64,20 @@ const BusinessCard = () => {
             <div className="flex flex-col pb-5 pt-2 gap-1">
                 <div className="grid grid-cols-2 mr-8">
                     <span className="text-black font-bold col-span-1 text-left ml-4">email</span>
-                    <span className="font-light z-10 col-span-1 text-left underline">mzazakeith@gmail.com</span>
+                    <span className="font-light z-10 col-span-1 text-left underline hover:text-accent/90">mzazakeith@gmail.com</span>
                 </div>
                 <div className="grid grid-cols-2 mr-8">
                     <span className="text-black font-bold col-span-1 text-left ml-4">linkedIn</span>
-                    <span className="font-light z-10 col-span-1 text-left underline">k-mzaza</span>
+                    <span className="font-light z-10 col-span-1 text-left underline hover:text-accent/90">k-mzaza</span>
                 </div>
                 <div className="grid grid-cols-2 mr-8">
                     <span className="text-black font-bold col-span-1 text-left ml-4">github</span>
-                    <span className="font-light z-10 col-span-1 text-left underline">mzazakeith</span>
+                    <span className="font-light z-10 col-span-1 text-left underline hover:text-accent/90">mzazakeith</span>
                 </div>
 
                 <div className="grid grid-cols-2 mr-8">
                     <span className="text-black font-bold col-span-1 text-left ml-4">hashnode</span>
-                    <span className="font-light z-10 col-span-1 text-left underline">mzaza.hashnode.dev</span>
+                    <span className="font-light z-10 col-span-1 text-left underline hover:text-accent/90">mzaza.hashnode.dev</span>
                 </div>
             </div>
 
