@@ -45,8 +45,8 @@ const LinkBox = ({Icon, href}) =>{
             {/*overlay div*/}
             <div
                 ref={scope}
-                className="absolute inset-0 grid place-content-center bg-accent">
-                <Icon className="text-xl sm:text-3xl md:text-4xl text-neutral-900"/>
+                className="absolute inset-0 grid place-content-center bg-neutral-900">
+                <Icon className="text-xl sm:text-3xl md:text-4xl text-[#ebdfd5]"/>
             </div>
         </a>
     );
