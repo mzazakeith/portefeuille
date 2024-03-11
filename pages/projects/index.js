@@ -13,10 +13,7 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex items-center justify-between relative rounded-3xl
-      border border-solid border-black bg-[#ebdfd5] shadow-2xl p-12">
-        {/*TODO: figure this shit out */}
-        {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-black '/>*/}
-
+      border border-solid border-black/50 bg-[#ebdfd5] shadow-2xl p-12 border-r-8 border-b-8">
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
@@ -48,9 +45,8 @@ const Project = ({title, type, image, link, github}) => {
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-       border-black bg-[#ebdfd5] shadow-2xl p-6 relative">
-        {/*TODO: figure this shit out */}
-        {/*<div className='absolute  top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2rem] rounded-br-3xl bg-black '/>*/}
+       border-black/50 bg-[#ebdfd5] shadow-2xl p-6 relative border-r-8 border-b-8">
+
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
         >
