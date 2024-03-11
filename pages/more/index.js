@@ -6,21 +6,29 @@ import Image from "next/image";
 const Article = ({title, date, link}) =>{
     return(
         <motion.li
-            whileHover="hover"
-            transition={{
-                duration: 0.8,
-                ease: "backInOut",
-            }}
-            variants={{
-                hover: {
-                    scale: 1.02,
-                },
-            }}
-            className="relative w-full first:mt-0 p-4 py-2 my-4 rounded-lg flex h-[4rem] items-center justify-between border border-solid border-neutral-800
+            initial={{y:200}}
+            whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
+            viewport={{once:true}}
+            className="cursor-pointer"
+            >
+            <motion.div
+                whileHover="hover"
+                transition={{
+                    duration: 0.8,
+                    ease: "backInOut",
+                }}
+                variants={{
+                    hover: {
+                        scale: 1.02,
+                    },
+                }}
+                className="relative w-full first:mt-0 p-4 py-2 my-4 rounded-lg flex h-[4rem] items-center justify-between border border-solid border-neutral-800
          border-r-4 border-b-4 hover:text-accent
         ">
-            <Link href={link} target="_blank" className="underline">{title}</Link>
-            <span className="text-accent font-semibold pl-4">{date}</span>
+                <Link href={link} target="_blank" className="underline">{title}</Link>
+                <span className="text-accent font-semibold pl-4">{date}</span>
+            </motion.div>
+
         </motion.li>
     )
 }
@@ -119,7 +127,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
               <p className="text-sm mb-2">{summary}</p>
           </div>
           <button
-              className="absolute bottom-4 left-4 right-4 z-20 rounded border-2 border-accent bg-accent py-2
+              className="absolute bottom-4 left-4 right-4 z-12 rounded border-2 border-accent bg-accent py-2
              text-center font-mono font-black uppercase text-neutral-800 backdrop-blur
               transition-colors hover:bg-white/30 hover:text-neutral-800">
           View {platform}
