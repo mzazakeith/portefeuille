@@ -1,5 +1,22 @@
+import {fadeIn} from "../../variants";
+import {motion} from "framer-motion";
+import BusinessCard from "../../components/BusinessCard";
+
 const Contact = () => {
-  return <div>Contact</div>;
+
+
+    return (
+      <div className="h-full pt-16 pb-32 text-center">
+        <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
+          <motion.h1
+              variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
+              className='h1 mt-2 xl:mt-auto'>
+            Get In Touch
+          </motion.h1>
+            <BusinessCard/>
+        </div>
+      </div>
+  )
 };
 
 export default Contact;
