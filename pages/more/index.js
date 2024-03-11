@@ -18,11 +18,22 @@ const FeaturedItem = ({image, title, time, summary, link, platform}) => {
           }}
           className="relative col-span-1 w-full p-4 bg-[#ebdfd5] border border-solid border-black rounded-2xl">
         <div className="relative z-10 text-accent text-left">
-          <span className="my-2 block origin-top-left font-mono text-6xl font-black leading-[1.2]">
+          <motion.span
+              initial={{scale:0.85}}
+              variants={{
+                hover: {
+                  scale: 1,
+                },
+              }}
+              transition={{
+                duration: 1,
+                ease: "backInOut",
+              }}
+              className="my-2 block origin-top-left font-mono text-6xl font-black leading-[1.2]">
             $299/
             <br/>
             Month
-          </span>
+          </motion.span>
           <p className="text-sm mb-2">{summary}</p>
         </div>
         <button
