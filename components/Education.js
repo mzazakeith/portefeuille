@@ -5,18 +5,20 @@ import LiIcon from "../components/Lilcon";
 const Details = ({type, time, place, info }) =>{
     const ref = useRef(null)
     return (
-        <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-center">
+        <li ref={ref} className="mt-8 first:mt-0 w-[70%] mx-auto flex flex-col items-center justify-center">
             <LiIcon reference={ref}/>
             <motion.div
                 initial={{y:50}}
                 whileInView={{y:0}}
                 transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className="capitalize font-bold text-2xl">{type}</h3>
-                <span className="capitalize font-medium">
-                    {time} | {place}
-                </span>
-                <p className="font-medium w-full">
+                <h3 className="uppercase text-2xl">{type}</h3>
+                <div className="my-2">
+                    <span className="capitalize font-light">
+                        {time} | <span className="font-medium text-accent/90 ml-0.5">{place}</span>
+                    </span>
+                </div>
+                <p className="w-full">
                     {info}
                 </p>
             </motion.div>
@@ -34,7 +36,7 @@ const Education = () => {
     )
     return (
         <div className="my-32">
-            <h2 className="font-bold text-8xl mb-32 w-full text-center">Education</h2>
+            <h2 className="font-light text-neutral-900 h2 uppercase mb-32 w-full text-center">Education</h2>
 
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
@@ -44,7 +46,7 @@ const Education = () => {
                     <Details
                         type='Bachelor Of Science In Computer Science'
                         time="2016-2020"
-                        place='Massachusetts Institute Of Technology (MIT)'
+                        place='Asia Pacific Universty (APU)'
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
                     Intelligence."
                     />
@@ -52,21 +54,21 @@ const Education = () => {
                     <Details
                         type='Bachelor Of Science In Computer Science'
                         time="2016-2020"
-                        place='Massachusetts Institute Of Technology (MIT)'
+                        place='Asia Pacific Universty (APU)'
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
                     Intelligence."
                     />
                     <Details
                         type='Bachelor Of Science In Computer Science'
                         time="2016-2020"
-                        place='Massachusetts Institute Of Technology (MIT)'
+                        place='Asia Pacific Universty (APU)'
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
                     Intelligence."
                     />
                     <Details
                         type='Bachelor Of Science In Computer Science'
                         time="2016-2020"
-                        place='Massachusetts Institute Of Technology (MIT)'
+                        place='Asia Pacific Universty (APU)'
                         info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
                     Intelligence."
                     />

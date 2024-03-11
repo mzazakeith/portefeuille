@@ -14,17 +14,17 @@ const Home = () => {
       <div className='h-full overflow-hidden'>
 
         <div className='w-full h-full'>
-          <div className='flex flex-col justify-center text-center xl:pt-40 xl:text-left h-full container mx-auto'>
+          <div className='flex flex-col justify-center text-center xl:pt-[18%] xl:text-left h-full container mx-auto'>
 
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1'> Transforming Ideas <br/> Into{' '}
-                <span className='text-accent'>Digital Reality</span>
+                className='h1 text-neutral-900 font-light'>Transforming Ideas <br/> Into{' '}
+                <span className='text-accent'>Digital Reality<span className="text-neutral-900">.</span></span>
             </motion.h1>
 
             <motion.p
                 variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
-                className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
+                className='text-neutral-900 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit erat, mattis in elit eget, ornare imperdiet dolor. Integer nec nunc laoreet, finibus turpis ac, molestie felis.
             </motion.p>
 
@@ -35,7 +35,7 @@ const Home = () => {
                   <Link
                       className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-[#ebdfd5] rounded-sm
                       bg-[#ebdfd5] text-accent border border-solid hover:border-transparent
-                      border-accent
+                      border-accent uppercase
                       "
                       href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
                   <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>

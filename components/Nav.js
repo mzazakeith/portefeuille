@@ -1,30 +1,20 @@
 // icons
-import {
-  HiHome,
-  HiUser,
-  HiViewColumns,
-  HiRectangleGroup,
-  HiChatBubbleBottomCenterText,
-  HiEnvelope,
-} from 'react-icons/hi2';
-import {HiPhone} from "react-icons/hi";
-
-// nav data
-export const navData = [
-  { name: 'home', path: '/', icon: <HiHome /> },
-  { name: 'about', path: '/about', icon: <HiUser /> },
-  { name: 'projects', path: '/projects', icon: <HiViewColumns /> },
-  { name: 'more', path: '/more', icon: <HiRectangleGroup /> },
-  {
-    name: 'contact',
-    path: '/contact',
-    icon: <HiPhone/>
-  },
-];
+import {FaCode, FaHome, FaPhone, FaUser} from "react-icons/fa";
+import {FaRectangleList} from "react-icons/fa6";
 
 import Link from 'next/link'
 
 import {useRouter} from "next/router";
+
+
+// nav data
+export const navData = [
+  { name: 'home', path: '/', icon: <FaHome /> },
+  { name: 'about', path: '/about', icon: <FaUser /> },
+  { name: 'projects', path: '/projects', icon: <FaCode /> },
+  { name: 'more', path: '/more', icon: <FaRectangleList /> },
+  {name: 'contact', path: '/contact', icon: <FaPhone/>},
+];
 
 const Nav = () => {
   const router = useRouter();
@@ -42,7 +32,7 @@ const Nav = () => {
                 key={index} href={link.path}>
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-primary items-center p-[6px] rounded-[3px]'>
-                  <div className='text-[12px] leading-none capitalize'>{link.name}</div>
+                  <div className='text-[12px] leading-none uppercase'>{link.name}</div>
                   <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px]
                   border-r-0 absolute -right-2'></div>
                 </div>

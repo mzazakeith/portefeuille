@@ -1,6 +1,7 @@
 import {fadeIn} from "../../variants";
 import {motion} from "framer-motion";
 import BusinessCard from "../../components/BusinessCard";
+import Footer from "../../components/Footer";
 
 const Contact = () => {
 
@@ -10,10 +11,11 @@ const Contact = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto'>
+              className='h1 mt-2 xl:mt-auto uppercase font-light'>
             Get In Touch
           </motion.h1>
             <BusinessCard/>
+            <Footer/>
         </div>
       </div>
   )
