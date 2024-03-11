@@ -104,7 +104,7 @@ const Projects = () => {
           <div className='w-full container mx-auto h-full flex flex-col items-center gap-x-6'>
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 mt-2 font-light xl:mt-auto'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
+                className='h1 mt-2 font-light xl:mt-auto uppercase'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
             </motion.h1>
 
             <div className="grid grid-cols-12 gap-24 gap-y-28 mt-16">
