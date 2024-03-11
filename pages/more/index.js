@@ -23,10 +23,10 @@ const Article = ({title, date, link}) =>{
                     },
                 }}
                 className="relative w-full first:mt-0 p-4 py-2 my-4 rounded-lg flex h-[4rem] items-center justify-between border border-solid border-neutral-800
-         border-r-4 border-b-4 hover:text-accent
+         border-r-4 border-b-4 hover:border-accent/90
         ">
-                <Link href={link} target="_blank" className="underline">{title}</Link>
-                <span className="text-accent font-semibold pl-4">{date}</span>
+                <Link href={link} target="_blank" className="hover:underline uppercase font-light">{title}</Link>
+                <span className="text-accent font-semibold pl-4 uppercase">{date}</span>
             </motion.div>
 
         </motion.li>
@@ -168,7 +168,7 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
-          <h2 className="font-bold text-4xl text-center my-16 mt-32">Featured Articles</h2>
+          <h2 className="font-light h2 uppercase text-center my-16 mt-32">Featured Articles</h2>
           <ul className="w-full">
               <Article
                   title="NextJS Portfolio Website"
