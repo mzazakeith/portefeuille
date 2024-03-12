@@ -69,16 +69,16 @@ const About = () => {
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
             <div className='md:col-span-4 flex flex-col items-start justify-start'>
               <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 dark:text-shade'>PERSONAL <span className="text-accent">SUMMARY</span></h2>
-              <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
+              <p className="dark:text-secondary">Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar
                 vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
               <br/>
-              <p>I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris.
+              <p className="dark:text-secondary">I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris.
                 Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. Donec ullamcorper nulla non metus auctor
                 fringilla.</p>
               <br/>
-              <p>I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet
+              <p className="dark:text-secondary">I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet
                 magna.</p>
             </div>
 
@@ -87,21 +87,21 @@ const About = () => {
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={100}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
 
               <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={50}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
 
               <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={5}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
             </div>
           </div>
