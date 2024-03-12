@@ -9,12 +9,15 @@ const FramerImage = motion(Image)
 
 const FeaturedProject = ({type,title, summary, image, link, github}) =>{
   return(
+      // dark:border-r-accent dark:border-b-accent dark:border-t-neutral-900 dark:border-l-neutral-90
       <motion.article
           initial={{y:50}}
           whileInView={{y:0}}
           transition={{duration:0.5, type:"spring"}}
           className="w-full flex items-center justify-between relative rounded-3xl
-      border border-solid border-neutral-900 bg-primary shadow-2xl p-12 border-r-8 border-b-8">
+      border border-solid border-neutral-900 bg-primary
+
+      dark:bg-dark dark:border-accent/90 shadow-2xl p-12 border-r-8 border-b-8">
         <Link href={link} target="_blank"
               className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
@@ -29,12 +32,12 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
         </Link>
         <div className="w-1/2 flex flex-col items-start justify-between pl-6">
           <span className="text-accent font-light uppercase text-xl">{type}</span>
-          <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-            <h2 className="my-2 w-full text-left text-4xl font-medium uppercase">{title}</h2>
+          <Link href={link} target="_blank" className="hover:underline underline-offset-2 dark:decoration-shade">
+            <h2 className="my-2 w-full text-left text-4xl font-medium uppercase text-neutral-900 dark:text-secondary">{title}</h2>
           </Link>
-          <p className="my-2 text-neutral-900">{summary}</p>
+          <p className="my-2 text-neutral-900 dark:text-secondary">{summary}</p>
           <div className="flex flex-row gap-2">
-            <span className="flex flex-col justify-center text-sm mb-2 uppercase">
+            <span className="flex flex-col justify-center text-sm mb-2 uppercase dark:text-secondary/80">
               Main Tech :
             </span>
             <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
@@ -48,9 +51,11 @@ const FeaturedProject = ({type,title, summary, image, link, github}) =>{
             </span>
           </div>
           <div className="mt-2 flex items-center">
-            <Link href={github} target="_blank" className="text-[3rem] cursor-pointer"> <RiGithubLine/></Link>
+            <Link href={github} target="_blank" className="text-[3rem] cursor-pointer dark:text-secondary"> <RiGithubLine/></Link>
             <Link href={link} target="_blank"
-                  className="ml-4 rounded-md bg-neutral-900 uppercase text-primary border border-solid
+                  className="ml-4 rounded-md bg-neutral-900 dark:bg-accent/90 dark:border-accent/90 uppercase
+                  dark:text-dark
+                  text-primary border border-solid
                   p-2 px-6 cursor-pointer hover:bg-primary hover:border-neutral-900 hover:text-neutral-900">Visit
               Project</Link>
           </div>
@@ -115,7 +120,7 @@ const Projects = () => {
           <div className='w-full container mx-auto h-full flex flex-col items-center gap-x-6'>
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 mt-2 font-light xl:mt-auto uppercase'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
+                className='h1 mt-2 font-light xl:mt-auto uppercase dark:text-shade'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
             </motion.h1>
 
             <div className="grid grid-cols-12 gap-24 gap-y-28 mt-16">
