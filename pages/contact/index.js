@@ -11,7 +11,7 @@ const Contact = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto uppercase font-light'>
+              className='h1 mt-2 xl:mt-auto uppercase font-light dark:text-shade'>
             Get In Touch
           </motion.h1>
             <motion.div
