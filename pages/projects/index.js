@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import {RiGithubLine} from "react-icons/ri";
 import ProjectsBtn from "../../components/ProjectsBtn";
+import Footer from "../../components/Footer";
 
 const FramerImage = motion(Image)
 
@@ -118,7 +119,8 @@ const Projects = () => {
           <div className='w-full container mx-auto h-full flex flex-col items-center gap-x-6'>
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 mt-1 font-light xl:mt-auto uppercase dark:text-shade'> WE LEARN BY PRACTICE<span className='text-accent'>.</span>
+                className='h1 mt-1 font-light xl:mt-auto uppercase dark:text-shade'> WE LEARN BY PRACTICE<span
+                className='text-accent'>.</span>
             </motion.h1>
 
             <div className="grid grid-cols-12 gap-6 md:gap-8 lg:gap-12 md:mt-10 xl:mt-16">
@@ -205,7 +207,7 @@ const Projects = () => {
                 {/*/>*/}
               </div>
 
-              <div className="col-span-12 xl:col-span-6 mb-36 xl:mb-0">
+              <div className="col-span-12 xl:col-span-6 mb-36">
                 <Project
                     title="NextJS Portfolio Website"
                     type="Featured Project"
@@ -221,6 +223,10 @@ const Projects = () => {
                 <ProjectsBtn/>
               </div>
             </div>
+          </div>
+
+          <div className="w-full text-center mb-16 xl:mb-0">
+            <Footer/>
           </div>
 
         </div>
