@@ -167,8 +167,8 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
-          <h2 className="font-light h2 uppercase text-center my-16 mt-32 dark:text-shade">Featured Articles</h2>
-          <ul className="w-full">
+          <h2 className="font-light h2 uppercase text-center xl:my-16 mb-8 mt-16 xl:mt-32 dark:text-shade">Featured Articles</h2>
+          <ul className="w-full mb-40 xl:mb-0">
               <Article
                   title="NextJS Portfolio Website"
                   date="March 11, 2024"
