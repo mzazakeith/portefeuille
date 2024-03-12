@@ -5,22 +5,10 @@
 .translate-z-0 {
   transform: translateZ(0px);
 }
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: #f13024;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after,
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-  color: #f13024;
-}
 
 @layer base {
   body {
-    @apply leading-relaxed overflow-x-hidden bg-primary;
+    @apply leading-relaxed overflow-x-hidden bg-primary dark:bg-dark;
   }
   .page {
     @apply w-full h-screen overflow-hidden;
