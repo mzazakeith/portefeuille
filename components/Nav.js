@@ -27,7 +27,7 @@ const Nav = () => {
         xl:px-0 h-[80px] xl:h-max py-8 bg-[#a49d95]/20 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
 
           {navData.map((link,index)=>{
-            const contactItemStyles = link.name === 'contact' && 'xl:block md:hidden sm:hidden xs:hidden lg:hidden';
+            const contactItemStyles = link.name === 'contact' && 'xl:block hidden';
             return <Link
                 className={`${link.path === pathname && 'text-accent'} relative flex items-center group 
                 hover:text-accent transition-all duration-300 ${contactItemStyles}`}

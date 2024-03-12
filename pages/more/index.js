@@ -102,7 +102,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
               scale: 1.05,
             },
           }}
-          className="relative h-[30rem] w-[25rem] md:h-[30rem] md:w-[30rem] shrink-0 overflow-hidden mt-8 first:mt-0 xl:mt-0 xl:col-span-1 p-4 bg-primary dark:bg-dark border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
+          className="relative h-[30rem] w-[22rem] sm: md:h-[30rem] md:w-[30rem] shrink-0 overflow-hidden mt-8 first:mt-0 xl:mt-0 xl:col-span-1 p-4 bg-primary dark:bg-dark border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
           <div className="relative z-10 text-accent text-left">
             <span className="mb-3 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
           {type}
@@ -140,14 +140,14 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
 const More = () => {
   return (
       <div className="h-full w-full flex flex-col items-center
-      justify-center overflow-hidden pt-16 pb-32 text-center container mx-auto">
+      justify-center overflow-hidden pt-16 xl:pb-32 text-center container mx-auto">
         <motion.h1
             variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-            className='h1 mt-2 font-light xl:mt-auto uppercase dark:text-shade'>
+            className='h1 font-light xl:mt-auto uppercase dark:text-shade'>
           Passion led us here
         </motion.h1>
 
-        <ul className="grid xl:grid-cols-2 xl:gap-16 mt-16">
+        <ul className="grid xl:grid-cols-2 xl:gap-16 xl:mt-16">
           <FeaturedItem
               titleLineOne="Africki"
               titleLineTwo="Kennels"
@@ -167,8 +167,8 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
-          <h2 className="font-light h2 uppercase text-center my-16 mt-32 dark:text-shade">Featured Articles</h2>
-          <ul className="w-full">
+          <h2 className="font-light h2 uppercase text-center xl:my-16 mb-8 mt-16 xl:mt-32 dark:text-shade">Featured Articles</h2>
+          <ul className="w-full mb-40 xl:mb-0">
               <Article
                   title="NextJS Portfolio Website"
                   date="March 11, 2024"
