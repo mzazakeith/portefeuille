@@ -5,21 +5,21 @@ import LiIcon from "../components/Lilcon";
 const Details = ({position, company, companyLink, time, address, work}) =>{
     const ref = useRef(null)
     return (
-        <li ref={ref} className="mt-8 first:mt-0 w-[60%] mx-auto flex flex-col items-center justify-center">
+        <li ref={ref} className="mt-8 first:mt-0 w-[80%] lg:w-[65%] mx-auto flex flex-col items-center justify-center text-left">
             <LiIcon reference={ref}/>
             <motion.div
             initial={{y:50}}
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className="uppercase font-medium text-2xl dark:text-secondary">{position} <a
+                <h3 className="uppercase font-medium text-2xl dark:text-secondary sm:text-md xs:text-sm">{position} <a
                     className="uppercase font-light text-accent/90 ml-0.5"
                     href={companyLink}
                     target={"_blank"}>@ {company}</a></h3>
-                <span className="capitalize font-light mt-4 dark:text-secondary/90">
+                <span className="capitalize font-light mt-4 dark:text-secondary/90 xs:text-sm ">
                     {time} | {address}
                 </span>
-                <p className="mt-2 w-full dark:text-secondary/80">
+                <p className="mt-2 w-full dark:text-secondary/80 md:text-sm">
                     {work}
                 </p>
             </motion.div>
@@ -36,14 +36,14 @@ const Experience = () => {
         }
     )
     return (
-        <div className="my-32">
-            <h2 className="font-light text-neutral-900 h2 uppercase mb-32 w-full text-center dark:text-shade">Experience</h2>
+        <div className="mt-20 xl:my-32">
+            <h2 className="font-light text-neutral-900 h2 uppercase mb-16 xl:mb-32  w-full text-center dark:text-shade">Experience</h2>
 
-            <div ref={ref} className="w-[75%] mx-auto relative">
+            <div ref={ref} className="xl:w-[75%] lg:mx-auto relative">
                 <motion.div
                     style={{scaleY:scrollYProgress}}
                     className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 dark:bg-accent origin-top"/>
-                <ul className="w-full flex flex-col items-start justify-between ml-4">
+                <ul className="w-full flex flex-col items-start justify-between ml-8 xl:ml-4">
                     <Details
                         position='Software Developer' company='Amazon'
                         companyLink=""
