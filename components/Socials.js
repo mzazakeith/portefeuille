@@ -8,7 +8,7 @@ import {MoonIcon, SunIcon} from "./ThemeSwitcherIcons";
 const Socials = () => {
     const [mode, setMode] = useThemeSwitcher();
   return (
-      <div className="flex items-center gap-x-5 dark:text-white/75">
+      <div className="flex items-center gap-x-5 dark:text-secondary">
         <Link target="_blank" href="" className="hover:text-accent transition-all duration-300 text-[1.50rem]">
           <RiLinkedinLine/>
         </Link>

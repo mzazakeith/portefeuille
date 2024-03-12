@@ -23,7 +23,7 @@ const Home = () => {
 
             <motion.p
                 variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
-                className='text-neutral-900 dark:text-white/65 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
+                className='text-neutral-900 dark:text-secondary max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit erat, mattis in elit eget, ornare imperdiet dolor. Integer nec nunc laoreet, finibus turpis ac, molestie felis.
             </motion.p>
 
@@ -37,7 +37,7 @@ const Home = () => {
                       border-accent uppercase dark:bg-dark
                       "
                       href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
-                  <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6 dark:text-white/75" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
+                  <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6 dark:text-secondary" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
               </motion.div>
 
           </div>

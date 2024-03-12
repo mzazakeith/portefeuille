@@ -23,6 +23,7 @@ module.exports = {
         primary: '#ebdfd5',
         accent: '#6488b4',
         dark: '#121212',
+        secondary: '#B3B3B3'
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
