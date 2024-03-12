@@ -140,14 +140,14 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
 const More = () => {
   return (
       <div className="h-full w-full flex flex-col items-center
-      justify-center overflow-hidden pt-16 pb-32 text-center container mx-auto">
+      justify-center overflow-hidden pt-16 xl:pb-32 text-center container mx-auto">
         <motion.h1
             variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-            className='h1 mt-2 font-light xl:mt-auto uppercase dark:text-shade'>
+            className='h1 font-light xl:mt-auto uppercase dark:text-shade'>
           Passion led us here
         </motion.h1>
 
-        <ul className="grid xl:grid-cols-2 xl:gap-16 mt-16">
+        <ul className="grid xl:grid-cols-2 xl:gap-16 xl:mt-16">
           <FeaturedItem
               titleLineOne="Africki"
               titleLineTwo="Kennels"
