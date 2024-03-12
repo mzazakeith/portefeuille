@@ -1,20 +1,3 @@
-// icons
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
 import Avatar from "../../components/Avatar";
 
 import {motion, useInView, useMotionValue, useSpring} from 'framer-motion'
@@ -50,7 +33,7 @@ const AnimatedNumbers = ({value}) =>{
 
 const About = () => {
   return (
-      <div className="h-full pt-16 pb-32 text-center xl:text-left">
+      <div className="h-full xl:pt-16 pb-32 text-center xl:text-left">
         <motion.div
             variants={fadeIn('right', 0.2)}
             initial="hidden"
@@ -62,13 +45,13 @@ const About = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900 dark:text-shade'> Learn <span
+              className='h1 mt-1 xl:mt-auto uppercase font-light text-neutral-900 dark:text-shade'> Learn <span
               className='text-accent'>.</span> Create <span
               className='text-accent'>.</span> Innovate
           </motion.h1>
-          <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
-            <div className='md:col-span-4 flex flex-col items-start justify-start'>
-              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 dark:text-shade'>PERSONAL <span className="text-accent">SUMMARY</span></h2>
+          <div className="grid w-full gap-16 xl:grid-cols-8 xl:gap-16">
+            <div className='xl:col-span-4 flex flex-col items-center xl:items-start justify-start'>
+              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-3 xl:mt-8  mb-9 dark:text-shade'>PERSONAL <span className="text-accent">SUMMARY</span></h2>
               <p className="dark:text-secondary">Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar
@@ -82,7 +65,7 @@ const About = () => {
                 magna.</p>
             </div>
 
-            <div className='md:col-span-4 flex flex-row items-center justify-between'>
+            <div className='hidden md:flex md:flex-row xl:col-span-4 items-center justify-between'>
               <div className='flex flex-col items-start justify-center mb-4 md:mb-0'>
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={100}/> +
@@ -107,7 +90,7 @@ const About = () => {
           </div>
 
           <div className='flex flex-row justify-center items-center w-full'>
-            <div className="text-accent inline-block animate-bounce hover:animate-none">
+            <div className="text-accent inline-block animate-bounce hover:animate-none mt-10 xl:mt-2">
               <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
               </svg>
@@ -125,14 +108,13 @@ const About = () => {
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
                         bg-primary text-accent border border-solid hover:border-transparent
-                        border-accent uppercase dark:bg-dark
-                        "
+                        border-accent uppercase dark:bg-dark"
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
               More <RiLinkedinFill className="text-black w-6 ml-1 dark:text-shade"/>
             </Link>
           </motion.div>
 
-          <div className='flex flex-row justify-center items-center w-full mt-10'>
+          <div className='flex flex-row justify-center items-center w-full mt-20 xl:mt-10'>
             <div className="text-accent inline-block animate-bounce hover:animate-none">
               <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"/>
@@ -157,13 +139,12 @@ const About = () => {
               initial={{y: 50}}
               whileInView={{y: 0}}
               transition={{duration: 0.5, type: "spring"}}
-              className="flex self-center items-center"
+              className="flex self-center items-center mt-10 xl:mt-5"
           >
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
                         bg-primary text-accent border border-solid hover:border-transparent
-                        border-accent uppercase dark:bg-dark
-                        "
+                        border-accent uppercase dark:bg-dark"
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
               Certifications <RiLinkedinFill className="text-neutral-900 w-6 ml-1 dark:text-shade"/>
             </Link>

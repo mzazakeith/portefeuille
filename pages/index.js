@@ -13,7 +13,7 @@ const Home = () => {
       <div className='h-full overflow-hidden'>
 
         <div className='w-full h-full'>
-          <div className='flex flex-col justify-center text-center xl:pt-[18%] xl:text-left h-full container mx-auto'>
+          <div className='mt-[15%] md:mt-2 lg:mt-5 xl:mt-0 flex flex-col justify-center text-center xl:pt-[18%] xl:text-left h-full container mx-auto'>
 
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'

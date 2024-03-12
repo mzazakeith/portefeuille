@@ -111,8 +111,8 @@ const ClipPathLinks = () => {
 
 const Skills = () => {
     return(
-        <div className="mt-36 w-full">
-            <h2 className="font-light uppercase h2 mb-20 w-full text-center dark:text-shade">Skills</h2>
+        <div className="mt-14 xl:mt-36 w-full">
+            <h2 className="font-light uppercase h2 mb-12 xl:mb-20 w-full text-center dark:text-shade">Skills</h2>
             <div className="mx-auto max-w-7xl shadow-2xl">
                 <ClipPathLinks/>
             </div>
