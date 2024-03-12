@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 const Layout = ({children}) => {
   return(
-      <div className={`min-h-screen bg-primary top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative`}>
+      <div className={`min-h-screen bg-primary top-0 bg-cover bg-no-repeat ${poppins.variable} font-poppins relative dark:bg-dark`}>
         <Nav/>
         <Header/>
         {children}

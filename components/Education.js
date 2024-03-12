@@ -12,13 +12,13 @@ const Details = ({type, time, place, info }) =>{
                 whileInView={{y:0}}
                 transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className="uppercase text-2xl">{type}</h3>
+                <h3 className="uppercase text-2xl dark:text-secondary">{type}</h3>
                 <div className="my-2">
                     <span className="capitalize font-light">
-                        {time} | <span className="font-medium text-accent/90 ml-0.5">{place}</span>
+                        <span className="dark:text-secondary/90">{time} | </span><span className="font-medium text-accent/90 ml-0.5 uppercase"> {place}</span>
                     </span>
                 </div>
-                <p className="w-full">
+                <p className="w-full dark:text-secondary/80">
                     {info}
                 </p>
             </motion.div>
@@ -36,12 +36,12 @@ const Education = () => {
     )
     return (
         <div className="my-32">
-            <h2 className="font-light text-neutral-900 h2 uppercase mb-32 w-full text-center">Education</h2>
+            <h2 className="font-light text-neutral-900 dark:text-shade h2 uppercase mb-32 w-full text-center">Education</h2>
 
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{scaleY:scrollYProgress}}
-                    className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 origin-top"/>
+                    className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 origin-top dark:bg-accent"/>
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
                         type='Bachelor Of Science In Computer Science'

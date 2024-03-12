@@ -26,78 +26,6 @@ import Link from "next/link";
 import {RiLinkedinFill} from "react-icons/ri";
 import Skills from "../../components/Skills";
 
-//  data
-const aboutData = [
-  {
-    title: 'skills',
-    info: [
-      {
-        title: 'Web Development',
-        icons: [
-          <FaHtml5 key="html5" />,
-          <FaCss3 key="css3" />,
-          <FaJs key="js" />,
-          <FaReact key="react" />,
-          <SiNextdotjs key="nextjs" />,
-          <SiFramer key="framer" />,
-          <FaWordpress key="wordpress" />,
-        ],
-      },
-      {
-        title: 'UI/UX Design',
-        icons: [<FaFigma key="figma" />, <SiAdobexd key="adobexd" />, <SiAdobephotoshop key="photoshop" />],
-      },
-    ],
-  },
-  {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'experience',
-    info: [
-      {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
-      },
-      {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
-      },
-      {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
-      },
-    ],
-  },
-];
-
 const AnimatedNumbers = ({value}) =>{
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
@@ -134,23 +62,23 @@ const About = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900'> Learn <span
+              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900 dark:text-shade'> Learn <span
               className='text-accent'>.</span> Create <span
               className='text-accent'>.</span> Innovate
           </motion.h1>
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
             <div className='md:col-span-4 flex flex-col items-start justify-start'>
-              <h2 className='text-xl uppercase font-light text-neutral-900 underline mt-8 mb-9'>PERSONAL SUMMARY</h2>
-              <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
+              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 dark:text-shade'>PERSONAL <span className="text-accent">SUMMARY</span></h2>
+              <p className="dark:text-secondary">Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar
                 vel, mauris. Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. </p>
               <br/>
-              <p>I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris.
+              <p className="dark:text-secondary">I believe that lorem ipsum. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar vel, mauris.
                 Morbi leo risus, porta ac, consectetur ac, vestibulum at, eros. Donec ullamcorper nulla non metus auctor
                 fringilla.</p>
               <br/>
-              <p>I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet
+              <p className="dark:text-secondary">I look forward to the opportunity to lorem ipsum. Nullam vel risus egestas, fringilla vel, aliquet
                 magna.</p>
             </div>
 
@@ -159,21 +87,21 @@ const About = () => {
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={100}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
 
               <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={50}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
 
               <div className='flex flex-col items-start justify-center mb-4 ml-4 md:mb-0'>
                 <span className='text-accent font-light inline-block text-7xl'>
                   <AnimatedNumbers value={5}/> +
                 </span>
-                <h2 className='text-lg font-light uppercase text-neutral-900'>Satisfied Clients</h2>
+                <h2 className='text-lg font-light uppercase text-neutral-900 dark:text-secondary'>Satisfied Clients</h2>
               </div>
             </div>
           </div>
@@ -197,10 +125,10 @@ const About = () => {
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
                         bg-primary text-accent border border-solid hover:border-transparent
-                        border-accent uppercase
+                        border-accent uppercase dark:bg-dark
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
-              More <RiLinkedinFill className="text-black w-6 ml-1"/>
+              More <RiLinkedinFill className="text-black w-6 ml-1 dark:text-shade"/>
             </Link>
           </motion.div>
 
@@ -234,10 +162,10 @@ const About = () => {
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
                         bg-primary text-accent border border-solid hover:border-transparent
-                        border-accent uppercase
+                        border-accent uppercase dark:bg-dark
                         "
                 href="https://www.linkedin.com/in/k-mzaza/details/certifications/" target="_blank">View
-              Certifications <RiLinkedinFill className="text-neutral-900 w-6 ml-1"/>
+              Certifications <RiLinkedinFill className="text-neutral-900 w-6 ml-1 dark:text-shade"/>
             </Link>
           </motion.div>
 

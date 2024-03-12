@@ -6,14 +6,14 @@ const Article = ({title, date, link}) =>{
     return(
         <motion.li
             initial={{y:200}}
-            whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
+            whileInView={{y:0, transition:{duration:0.6, ease:"easeInOut"}}}
             viewport={{once:true}}
             className="cursor-pointer"
             >
             <motion.div
                 whileHover="hover"
                 transition={{
-                    duration: 0.8,
+                    duration: 0.5,
                     ease: "backInOut",
                 }}
                 variants={{
@@ -22,9 +22,9 @@ const Article = ({title, date, link}) =>{
                     },
                 }}
                 className="relative w-full first:mt-0 p-4 py-2 my-4 rounded-lg flex h-[4rem] items-center justify-between border border-solid border-neutral-800
-         border-r-4 border-b-4 hover:border-accent/90
+                dark:border-secondary/60 dark:hover:border-accent/90 border-r-4 border-b-4 hover:border-accent/90
         ">
-                <Link href={link} target="_blank" className="hover:underline uppercase font-light">{title}</Link>
+                <Link href={link} target="_blank" className="hover:underline dark:hover:decoration-secondary uppercase font-light dark:text-secondary">{title}</Link>
                 <span className="text-accent font-semibold pl-4 uppercase">{date}</span>
             </motion.div>
 
@@ -102,7 +102,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
               scale: 1.05,
             },
           }}
-          className="relative h-[30rem] w-[30rem] shrink-0 overflow-hidden col-span-1 p-4 bg-primary border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
+          className="relative h-[30rem] w-[30rem] shrink-0 overflow-hidden col-span-1 p-4 bg-primary dark:bg-dark border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
           <div className="relative z-10 text-accent text-left">
             <span className="mb-3 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
           {type}
@@ -118,12 +118,12 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
                       duration: 1,
                       ease: "backInOut",
                   }}
-                  className="mt-2 mb-5 block origin-top-left font-mono text-6xl uppercase text-neutral-900 leading-[1.2]">
+                  className="mt-2 mb-5 block origin-top-left font-mono text-6xl uppercase text-neutral-900 dark:text-secondary/90 leading-[1.2]">
                   {titleLineOne}
                   <br/>
                   {titleLineTwo}
               </motion.span>
-              <p className="text-sm mb-2">{summary}</p>
+              <p className="text-sm mb-2 dark:text-secondary/80">{summary}</p>
           </div>
           <button
               className="absolute bottom-4 left-4 right-4 z-12 rounded border-2 border-accent bg-accent py-2
@@ -143,7 +143,7 @@ const More = () => {
       justify-center overflow-hidden pt-16 pb-32 text-center container mx-auto">
         <motion.h1
             variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-            className='h1 mt-2 font-light xl:mt-auto uppercase'>
+            className='h1 mt-2 font-light xl:mt-auto uppercase dark:text-shade'>
           Passion led us here
         </motion.h1>
 
@@ -167,7 +167,7 @@ const More = () => {
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 page transitions, cool background effects, unique design and it is mobile responsive.page transitions, cool background effects, unique design and it is mobile responsive."/>
         </ul>
-          <h2 className="font-light h2 uppercase text-center my-16 mt-32">Featured Articles</h2>
+          <h2 className="font-light h2 uppercase text-center my-16 mt-32 dark:text-shade">Featured Articles</h2>
           <ul className="w-full">
               <Article
                   title="NextJS Portfolio Website"

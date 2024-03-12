@@ -11,7 +11,7 @@ const Header = () => {
           <div className='container mx-auto'>
               <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
                   <Link className="text-[2.6rem] font-poppins"  href="">
-                      <span className="text-neutral-900 font-light">Mzaza<span className="text-accent">.</span></span>
+                      <span className="text-neutral-900 font-light dark:text-shade">Mzaza<span className="text-accent">.</span></span>
                   </Link>
 
                   <Socials/>

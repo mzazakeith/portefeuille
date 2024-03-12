@@ -5,6 +5,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode:"class",
   theme: {
     container: {
       padding: {
@@ -21,6 +22,9 @@ module.exports = {
       colors: {
         primary: '#ebdfd5',
         accent: '#6488b4',
+        dark: '#0b192f',
+        secondary: '#B3B3B3',
+        shade: '#ffffffd9',
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',
