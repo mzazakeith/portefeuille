@@ -22,7 +22,7 @@ module.exports = {
       colors: {
         primary: '#ebdfd5',
         accent: '#6488b4',
-        dark: '#121212',
+        dark: '#0b192f',
         secondary: '#B3B3B3',
         shade: '#ffffffd9',
       },
