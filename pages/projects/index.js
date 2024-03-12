@@ -160,15 +160,15 @@ const Projects = () => {
               </div>
 
               <div className="col-span-12">
-                {/*<FeaturedProject*/}
-                {/*    title="NextJS Portfolio Website"*/}
-                {/*    type="Featured Project"*/}
-                {/*    link="https://mzazakeith.github.io/portefeuille/"*/}
-                {/*    github="https://github.com/mzazakeith/portefeuille"*/}
-                {/*    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"*/}
-                {/*    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth*/}
-                {/*page transitions, cool background effects, unique design and it is mobile responsive."*/}
-                {/*/>*/}
+                <FeaturedProject
+                    title="NextJS Portfolio Website"
+                    type="Featured Project"
+                    link="https://mzazakeith.github.io/portefeuille/"
+                    github="https://github.com/mzazakeith/portefeuille"
+                    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"
+                    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth
+                page transitions, cool background effects, unique design and it is mobile responsive."
+                />
               </div>
 
               <div className="col-span-12 xl:col-span-6">
@@ -196,15 +196,15 @@ const Projects = () => {
               </div>
 
               <div className="col-span-12">
-                {/*<FeaturedProject*/}
-                {/*    title="NextJS Portfolio Website"*/}
-                {/*    type="Featured Project"*/}
-                {/*    link="https://mzazakeith.github.io/portefeuille/"*/}
-                {/*    github="https://github.com/mzazakeith/portefeuille"*/}
-                {/*    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"*/}
-                {/*    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth*/}
-                {/*page transitions, cool background effects, unique design and it is mobile responsive."*/}
-                {/*/>*/}
+                <FeaturedProject
+                    title="NextJS Portfolio Website"
+                    type="Featured Project"
+                    link="https://mzazakeith.github.io/portefeuille/"
+                    github="https://github.com/mzazakeith/portefeuille"
+                    image="https://raw.githubusercontent.com/codebucks27/Next.js-Developer-Portfolio-Starter-Code/main/public/images/projects/portfolio-cover-image.jpg"
+                    summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth
+                page transitions, cool background effects, unique design and it is mobile responsive."
+                />
               </div>
 
               <div className="col-span-12 xl:col-span-6 mb-36">
