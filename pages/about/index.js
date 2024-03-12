@@ -62,13 +62,13 @@ const About = () => {
         <div className='container mx-auto h-full flex flex-col items-center gap-x-6'>
           <motion.h1
               variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900'> Learn <span
+              className='h1 mt-2 xl:mt-auto uppercase font-light text-neutral-900 dark:text-shade'> Learn <span
               className='text-accent'>.</span> Create <span
               className='text-accent'>.</span> Innovate
           </motion.h1>
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
             <div className='md:col-span-4 flex flex-col items-start justify-start'>
-              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 '>PERSONAL <span className="text-accent">SUMMARY</span></h2>
+              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 dark:text-shade'>PERSONAL <span className="text-accent">SUMMARY</span></h2>
               <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar

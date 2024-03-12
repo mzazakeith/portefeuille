@@ -17,7 +17,7 @@ const Home = () => {
 
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 text-neutral-900 dark:text-white/85 font-light'>Transforming Ideas <br/> Into{' '}
+                className='h1 text-neutral-900 dark:text-shade font-light'>Transforming Ideas <br/> Into{' '}
                 <span className='text-accent'>Digital Reality<span className="text-neutral-900">.</span></span>
             </motion.h1>
 
