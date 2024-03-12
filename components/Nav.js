@@ -19,6 +19,7 @@ export const navData = [
 const Nav = () => {
   const router = useRouter();
   const pathname = router.pathname
+
   return (
       <nav className='flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto
       xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen'>
@@ -26,9 +27,10 @@ const Nav = () => {
         xl:px-0 h-[80px] xl:h-max py-8 bg-[#a49d95]/20 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
 
           {navData.map((link,index)=>{
+            const contactItemStyles = link.name === 'contact' && 'xl:block md:hidden sm:hidden xs:hidden lg:hidden';
             return <Link
                 className={`${link.path === pathname && 'text-accent'} relative flex items-center group 
-                hover:text-accent transition-all duration-300`}
+                hover:text-accent transition-all duration-300 ${contactItemStyles}`}
                 key={index} href={link.path}>
               <div className='absolute pr-14 right-0 hidden xl:group-hover:flex'>
                 <div className='bg-white relative flex text-neutral-900 items-center p-[6px] rounded-[3px]'>
