@@ -102,7 +102,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
               scale: 1.05,
             },
           }}
-          className="relative h-[30rem] w-[30rem] shrink-0 overflow-hidden col-span-1 p-4 bg-primary dark:bg-dark border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
+          className="relative h-[30rem] w-[25rem] md:h-[30rem] md:w-[30rem] shrink-0 overflow-hidden mt-8 first:mt-0 xl:mt-0 xl:col-span-1 p-4 bg-primary dark:bg-dark border border-solid border-[#6589b580] rounded-2xl shadow-2xl">
           <div className="relative z-10 text-accent text-left">
             <span className="mb-3 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
           {type}
@@ -118,7 +118,7 @@ const FeaturedItem = ({ titleLineOne,titleLineTwo, type, summary, link, platform
                       duration: 1,
                       ease: "backInOut",
                   }}
-                  className="mt-2 mb-5 block origin-top-left font-mono text-6xl uppercase text-neutral-900 dark:text-secondary/90 leading-[1.2]">
+                  className="mt-2 mb-1 xl:mb-5 block origin-top-left font-mono text-6xl uppercase text-neutral-900 dark:text-secondary/90 leading-[1.2]">
                   {titleLineOne}
                   <br/>
                   {titleLineTwo}
@@ -147,7 +147,7 @@ const More = () => {
           Passion led us here
         </motion.h1>
 
-        <ul className="grid grid-cols-2 gap-16 mt-16">
+        <ul className="grid xl:grid-cols-2 xl:gap-16 mt-16">
           <FeaturedItem
               titleLineOne="Africki"
               titleLineTwo="Kennels"
