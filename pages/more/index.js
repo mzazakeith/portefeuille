@@ -6,14 +6,14 @@ const Article = ({title, date, link}) =>{
     return(
         <motion.li
             initial={{y:200}}
-            whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
+            whileInView={{y:0, transition:{duration:0.6, ease:"easeInOut"}}}
             viewport={{once:true}}
             className="cursor-pointer"
             >
             <motion.div
                 whileHover="hover"
                 transition={{
-                    duration: 0.8,
+                    duration: 0.5,
                     ease: "backInOut",
                 }}
                 variants={{

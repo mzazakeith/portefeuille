@@ -140,7 +140,7 @@ const About = () => {
           </motion.h1>
           <div className="grid w-full gap-16 md:grid-cols-8 md:gap-16">
             <div className='md:col-span-4 flex flex-col items-start justify-start'>
-              <h2 className='text-xl uppercase font-light text-neutral-900 underline mt-8 mb-9'>PERSONAL SUMMARY</h2>
+              <h2 className='text-3xl uppercase font-light text-neutral-900 mt-8 mb-9 '>PERSONAL <span className="text-accent">SUMMARY</span></h2>
               <p>Hi, I am Lorem. Amet ipsum mauris vitae purus faucibus ornare. Nullam vel risus egestas, fringilla vel,
                 aliquet magna. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus
                 auctor fringilla. Phasellus eu ex justo. Maecenas sem magna, tincidunt quis, venenatis eget, pulvinar
