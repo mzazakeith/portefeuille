@@ -12,14 +12,14 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className="uppercase font-medium text-2xl">{position} <a
+                <h3 className="uppercase font-medium text-2xl dark:text-secondary">{position} <a
                     className="uppercase font-light text-accent/90 ml-0.5"
                     href={companyLink}
                     target={"_blank"}>@ {company}</a></h3>
-                <span className="capitalize font-light mt-4">
+                <span className="capitalize font-light mt-4 dark:text-secondary/90">
                     {time} | {address}
                 </span>
-                <p className="mt-2 w-full">
+                <p className="mt-2 w-full dark:text-secondary/80">
                     {work}
                 </p>
             </motion.div>
@@ -37,12 +37,12 @@ const Experience = () => {
     )
     return (
         <div className="my-32">
-            <h2 className="font-light text-neutral-900 h2 uppercase mb-32 w-full text-center">Experience</h2>
+            <h2 className="font-light text-neutral-900 h2 uppercase mb-32 w-full text-center dark:text-shade">Experience</h2>
 
             <div ref={ref} className="w-[75%] mx-auto relative">
                 <motion.div
                     style={{scaleY:scrollYProgress}}
-                    className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 origin-top"/>
+                    className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 dark:bg-accent origin-top"/>
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
                         position='Software Developer' company='Amazon'

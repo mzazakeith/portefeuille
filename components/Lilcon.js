@@ -8,12 +8,12 @@ const LiIcon = ({reference}) => {
         }
     )
     return(
-        <figure className="absolute left-0 stroke-black">
+        <figure className="absolute left-0 stroke-neutral-900 dark:stroke-shade/75">
             <svg className="-rotate-90" width="75" height="75" viewBox='0 0 100 100'>
                 <circle cx="75" cy="50" r="20" className="stroke-accent stroke-1 fill-none"/>
                 <motion.circle style={{
                     pathLength: scrollYProgress
-                }} cx="75" cy="50" r="20" className="stroke-[5px] fill-primary"/>
+                }} cx="75" cy="50" r="20" className="stroke-[5px] fill-primary dark:fill-dark"/>
                 <circle cx="75" cy="50" r="10" className="animate-pulse stroke-1 fill-accent"/>
             </svg>
         </figure>
