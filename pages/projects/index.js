@@ -74,7 +74,7 @@ const Project = ({title, type, image, link, github}) => {
           whileInView={{y: 0}}
           transition={{duration: 0.5, type: "spring"}}
           className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-       border-neutral-900 bg-primary shadow-2xl p-6 relative border-r-8 border-b-8">
+       border-neutral-900 bg-primary shadow-2xl p-6 relative border-r-8 border-b-8 dark:bg-dark dark:border-accent/90">
 
         <Link href={link} target="_blank"
               className="w-full cursor-pointer overflow-hidden rounded-lg"
@@ -86,11 +86,11 @@ const Project = ({title, type, image, link, github}) => {
         </Link>
         <div className="w-full flex flex-col items-start justify-between mt-4">
           <span className="text-accent font-light uppercase text-xl">{type}</span>
-          <Link href={link} target="_blank" className="hover:underline underline-offset-2">
-            <h2 className="my-2 w-full text-left text-3xl font-medium uppercase">{title}</h2>
+          <Link href={link} target="_blank" className="hover:underline underline-offset-2 dark:decoration-shade">
+            <h2 className="my-2 w-full text-left text-3xl font-medium uppercase dark:text-secondary ">{title}</h2>
           </Link>
           <div className="flex flex-row gap-2">
-            <span className="flex flex-col justify-center text-sm mb-2 uppercase">
+            <span className="flex flex-col justify-center text-sm mb-2 uppercase dark:text-secondary/80">
               Main Tech :
             </span>
             <span className="mb-3 mt-1 block w-fit rounded-full bg-accent/20 px-3 py-2 text-sm font-light text-accent">
@@ -105,8 +105,8 @@ const Project = ({title, type, image, link, github}) => {
           </div>
           <div className="w-full mt-2 flex items-center justify-between">
             <Link href={link} target="_blank"
-                  className="text-lg cursor-pointer underline uppercase hover:text-accent/90">Visit</Link>
-            <Link href={github} target="_blank" className="text-[2rem] cursor-pointer"> <RiGithubLine/></Link>
+                  className="text-lg cursor-pointer underline uppercase hover:text-accent/90 dark:text-secondary">Visit</Link>
+            <Link href={github} target="_blank" className="text-[2rem] cursor-pointer dark:text-secondary"> <RiGithubLine/></Link>
           </div>
         </div>
       </motion.article>
