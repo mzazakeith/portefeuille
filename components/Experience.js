@@ -12,14 +12,14 @@ const Details = ({position, company, companyLink, time, address, work}) =>{
             whileInView={{y:0}}
             transition={{duration:0.5, type:"spring"}}
             >
-                <h3 className="uppercase font-medium text-2xl dark:text-secondary sm:text-md xs:text-sm">{position} <a
+                <h3 className="uppercase font-medium md:text-2xl dark:text-secondary text-lg">{position} <a
                     className="uppercase font-light text-accent/90 ml-0.5"
                     href={companyLink}
                     target={"_blank"}>@ {company}</a></h3>
                 <span className="capitalize font-light mt-4 dark:text-secondary/90 xs:text-sm ">
                     {time} | {address}
                 </span>
-                <p className="mt-2 w-full dark:text-secondary/80 md:text-sm">
+                <p className="mt-2 w-full dark:text-secondary/80 text-sm md:text-lg">
                     {work}
                 </p>
             </motion.div>

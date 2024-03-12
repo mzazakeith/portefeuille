@@ -139,7 +139,7 @@ const About = () => {
               initial={{y: 50}}
               whileInView={{y: 0}}
               transition={{duration: 0.5, type: "spring"}}
-              className="flex self-center items-center"
+              className="flex self-center items-center mt-10 xl:mt-5"
           >
             <Link
                 className="flex items-center hover:bg-accent p-2.5 px-6 hover:text-primary rounded-sm
