@@ -17,16 +17,16 @@ const Home = () => {
 
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 text-neutral-900 dark:text-shade font-light'>Transforming Ideas <br/> Into{' '}
-                <span className='text-accent'>Digital Reality<span className="text-neutral-900">.</span></span>
+                className='h1 text-neutral-900 dark:text-shade font-light'>Seamless Experiences <br/> from{' '}
+                <span className='text-accent'>Code to Cloud<span className="text-neutral-900">.</span></span>
             </motion.h1>
 
-            <motion.p
+
+              <motion.p
                 variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
                 className='text-neutral-900 dark:text-secondary max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit erat, mattis in elit eget, ornare imperdiet dolor. Integer nec nunc laoreet, finibus turpis ac, molestie felis.
-            </motion.p>
-
+                  {`Hey, welcome to my portfolio! I'm Keith Mzaza, a Full-Stack Developer and DevOps Engineer based in Nairobi, Kenya. Here, you can explore my latest projects, articles, and more.`}
+              </motion.p>
               <motion.div
                   variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden'
                   className="flex self-center xl:self-start items-center"
