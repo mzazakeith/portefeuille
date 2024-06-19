@@ -17,16 +17,16 @@ const Home = () => {
 
             <motion.h1
                 variants={fadeIn('down', 0.2)} initial='hidden' animate='show' exit='hidden'
-                className='h1 text-neutral-900 dark:text-shade font-light'>Transforming Ideas <br/> Into{' '}
-                <span className='text-accent'>Digital Reality<span className="text-neutral-900">.</span></span>
+                className='h1 text-neutral-900 dark:text-shade font-light'>Seamless Experiences <br/> from{' '}
+                <span className='text-accent'>Code to Cloud<span className="text-neutral-900">.</span></span>
             </motion.h1>
 
-            <motion.p
+
+              <motion.p
                 variants={fadeIn('down', 0.3)} initial='hidden' animate='show' exit='hidden'
                 className='text-neutral-900 dark:text-secondary max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-5 xl:mb-8'>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed velit erat, mattis in elit eget, ornare imperdiet dolor. Integer nec nunc laoreet, finibus turpis ac, molestie felis.
-            </motion.p>
-
+                  {`Hey, welcome to my portfolio! I'm Keith Mzaza, a Full-Stack Developer and DevOps Engineer based in Nairobi, Kenya. Here, you can explore my latest projects, articles, and more.`}
+              </motion.p>
               <motion.div
                   variants={fadeIn('down', 0.4)} initial='hidden' animate='show' exit='hidden'
                   className="flex self-center xl:self-start items-center"
@@ -36,7 +36,9 @@ const Home = () => {
                       bg-primary text-accent border border-solid hover:border-transparent
                       border-accent uppercase dark:bg-dark
                       "
-                      href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
+                      href="/resume.pdf" // Update this path to the actual location of your resume
+                      target="_blank"
+                      download="Mzaza Keith Resume.pdf" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
                   <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6 dark:text-secondary" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
               </motion.div>
 

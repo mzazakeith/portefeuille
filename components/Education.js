@@ -1,6 +1,8 @@
 import {motion,useScroll} from "framer-motion";
 import {useRef} from "react";
 import LiIcon from "../components/Lilcon";
+import data from '../data/education.json';
+
 
 const Details = ({type, time, place, info }) =>{
     const ref = useRef(null)
@@ -43,35 +45,16 @@ const Education = () => {
                     style={{scaleY:scrollYProgress}}
                     className="absolute h-full left-9 top-0 w-[4px] bg-neutral-900 origin-top dark:bg-accent"/>
                 <ul className="w-full flex flex-col items-start justify-between ml-8 xl:ml-4">
-                    <Details
-                        type='BSc. In Computer Science'
-                        time="2016-2020"
-                        place='Asia Pacific Universty (APU)'
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
-                    Intelligence."
-                    />
 
-                    <Details
-                        type='BSc. In Computer Science'
-                        time="2016-2020"
-                        place='Asia Pacific Universty (APU)'
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
-                    Intelligence."
-                    />
-                    <Details
-                        type='BSc. In Computer Science'
-                        time="2016-2020"
-                        place='Asia Pacific Universty (APU)'
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
-                    Intelligence."
-                    />
-                    <Details
-                        type='BSc. In Computer Science'
-                        time="2016-2020"
-                        place='Asia Pacific Universty (APU)'
-                        info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial
-                    Intelligence."
-                    />
+                    {data.map((detail, index) => (
+                        <Details
+                            key={index}
+                            type={detail.type}
+                            time={detail.time}
+                            place={detail.place}
+                            info={detail.info}
+                        />
+                    ))}
 
                 </ul>
             </div>
