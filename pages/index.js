@@ -36,7 +36,9 @@ const Home = () => {
                       bg-primary text-accent border border-solid hover:border-transparent
                       border-accent uppercase dark:bg-dark
                       "
-                      href="" target="_blank" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
+                      href="/resume.pdf" // Update this path to the actual location of your resume
+                      target="_blank"
+                      download="Mzaza Keith Resume.pdf" >Resume<RiDownloadLine className="w-6 ml-1"/></Link>
                   <Link className="z-40 ml-4 capitalize underline hover:text-accent cursor-pointer p-1.5 px-6 dark:text-secondary" href="mailto:mzazakeith@gmail.com" >Contact Me</Link>
               </motion.div>
 
